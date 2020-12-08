@@ -1,0 +1,12 @@
+<%= form_for :student, url: login_path do |f| %>
+  <p><%=f.label "Username:" %></p>
+   
+  <%=f.text_field :username, :placeholder => 'Enter Username' %><br><br>
+  <p><%=f.label "Password:" %></p>
+  <%=f.password_field :password, :placeholder => 'Enter Password' %><br><br>
+
+  <%=f.submit "Login" %>
+  <!--<%= f.submit 'name of button here', :class => 'submit_class_name_here' %> -->
+
+
+<%end%>
