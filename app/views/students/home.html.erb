@@ -5,19 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GUILD</title>
 </head>
 <body>
 
 <div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">GUILD</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" ><%= image_tag("students/guild_logo.jpeg", width: '100px') %></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+    <ul class="navbar-nav navLinksLogSign">
       <li class="nav-item">
         <%= link_to 'Student Login', login_path, class: "nav-link btn" %>
       </li>
@@ -29,13 +29,18 @@
 </nav>
 </div>
 
-<div class="container">
-    <h1>Work is changing. So are benefits.</h1>
+    
+    <div class="jumbotron">
+        <h1 class="display-4 homeHeading">Work is changing. So are benefits.</h1>
+        <p class="lead">Prepare for the future with a program designed to enhance your workforce, and satisfy the needs of your business.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg homeLearnMore" href="#" role="button">Learn more</a>
+        </p>
+    </div>
 
-    <p>Prepare for the future with a program designed to enhance your workforce, and satisfy the needs of your business.</p>
 
-    <button class="btn btn-primary btn-lg homeLearnMore">Learn More</button>
-</div>
+    
+    
     
 </body>
 </html>
