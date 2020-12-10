@@ -17,8 +17,11 @@ p {
 .homeLearnMore {
      background-color: #007d8c;
      border: none;
-     padding-left: 15px;
-     margin-left: 15px;
+     padding: 10px 50px;
+    //  margin-left: 15px;
+    margin-top: 20px;
+     
+
 }
 
 .homeLearnMore:hover {
@@ -72,6 +75,8 @@ p {
 .feature-box {
     padding: 10px
 }
+
+// Join Benefits Section 
 
 #joinBenefits {
     text-align: center;
