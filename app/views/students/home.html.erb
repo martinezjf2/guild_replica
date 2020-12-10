@@ -9,9 +9,8 @@
 </head>
 <body>
 
-<div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" ><%= image_tag("students/guild_logo.jpeg", width: '100px') %></a>
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand guildLogo" ><%= image_tag("students/guild_logo.jpeg", width: '100px') %></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,16 +26,24 @@
     </ul>
   </div>
 </nav>
-</div>
-
     
+
+
     <div class="jumbotron">
-        <h1 class="display-4 homeHeading">Work is changing. So are benefits.</h1>
-        <p class="lead">Prepare for the future with a program designed to enhance your workforce, and satisfy the needs of your business.</p>
+     <div class="row">
+        <h1 class="display-4 homeHeading col-lg-6">Work is changing. So are benefits.</h1>
+        <p class="lead col-lg-6 subtitleHome">Prepare for the future with a program designed to enhance your workforce, and satisfy the needs of your business.</p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg homeLearnMore" href="#" role="button">Learn more</a>
+        <button class="btn btn-primary btn-lg homeLearnMore " href="#" role="button">Learn more</button>
         </p>
     </div>
+    <div class="col-lg-6">
+      <img src="" alt="iphone-mockup" class="title-image">
+    </div>
+  </div>
+    </div>
+    
+
 
 
     
