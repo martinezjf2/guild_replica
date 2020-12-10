@@ -1,0 +1,46 @@
+// Place all the styles related to the Students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.loginButton {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 24px;
+    width: 272px;
+    background-color: #007d8c;
+    // height: 20px;
+    letter-spacing: 1.3px;
+    // text-align: center;
+}
+
+.loginButton:hover {
+    background-color: #037180;
+    text-decoration: underline;
+}
+
+.input {
+    margin-bottom: 5px;
+    width: 272px;
+    margin-left: 50px;
+    // justify-content: center;
+    // margin-left: 27;
+}
+
+.welcomeBack {
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px 10px 20px;
+    font-weight: bold;
+    color: #636363;
+}
+
+.guildSignIn {
+    text-align: center;
+}
+
+.signInForm {
+    padding: 10px 25px;
+    margin: 100px 150px
+}
