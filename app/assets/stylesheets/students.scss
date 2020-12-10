@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+// body {
+//     text-align: center;
+// }
+
+p {
+    color: #8f8f8f
+}
+
+
 .homeLearnMore {
      background-color: #007d8c;
      border: none;
@@ -9,9 +19,14 @@
      margin-left: 15px;
 }
 
+.homeLearnMore:hover {
+    background-color: #037180;
+}
+
 .homeHeading {
     color: #007d8c;
     font-weight: bold;
+    text-align: left;
     
 }
 
@@ -21,5 +36,15 @@
 
 .guildLogo {
     margin-left: 1%;
+}
+
+#features {
+    text-align: center;
+    margin: 15px
+}
+
+.featureTitle {
+    color: #119DA4;
+    font-weight: bold;
 }
 
