@@ -72,6 +72,16 @@ p {
     background-color: rgba(194,228,243,.25);
 }
 
+.signUpButton {
+    background-color: #007d8c;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.signUpButton:hover {
+    background-color: #037180;
+}
+
 .endQuestion {
     font-weight: bold;
 }
