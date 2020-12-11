@@ -15,7 +15,7 @@ class Student < ApplicationRecord
 
 
     def is_first_name_uppercase?
-        if first_name.split.any{ |letter| letter[0].upcase != letter[0]}
+        if first_name.split.any?{ |letter| letter[0].upcase != letter[0]}
             errors.add(:first_name, "First Name must be capitalized!")
     end
     end
@@ -25,7 +25,7 @@ class Student < ApplicationRecord
     end
 
     def is_last_name_uppercase?
-        if last_name.split.any{ |letter| letter[0].upcase != letter[0]}
+        if last_name.split.any?{ |letter| letter[0].upcase != letter[0]}
             errors.add(:last_name, "First Name must be capitalized!")
         end
     end
