@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
             redirect_to students_path
         else
             flash[:message] = "Sorry, Please Try Again"
-            render :new
+            redirect_to '/login'
         end
     end
 
