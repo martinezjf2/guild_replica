@@ -1,18 +1,33 @@
-this is the form to create a new student
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education as a Benefit - Guild Education</title>
+</head>
+
+<body class="text-center signInForm">
+    
+<div class="container">
+
+  <a href="/" class=" guildSignIn" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
+
+<h3 class="welcomeBack">Welcome Back!</h3>
+<div class="inputBox">
 
 <%= form_for @student do |f| %>
-    <p><%=f.label "First Name:" %></p>
-    <%=f.text_field :first_name, :placeholder => "Enter First Name" %><br><br>
-    <p><%=f.label "Last Name:" %></p>
-    <%=f.text_field :last_name, :placeholder => "Enter Last Name" %><br><br>
-    <p><%=f.label "Email:" %></p>
-    <%=f.text_field :email, :placeholder => "Enter Email" %><br><br>
-    <p><%=f.label "Username:" %></p>
-    <%=f.text_field :username, :placeholder => "Enter Username" %><br><br>
-    <p><%=f.label "Password:" %></p>
-    <%=f.password_field :password, :placeholder => "Enter Password" %><br><br>
-    <p><%=f.label "Confirm Password:"%></p>
-    <%=f.password_field :password_confirmation, :placeholder => "Confirm Password" %><br><br>
-    <%=f.button "Sign Up", :class => 'btn'%>
+    <%=f.text_field :first_name, :placeholder => "Enter First Name", class: "form-control input"%><br><br>
+    <%=f.text_field :last_name, :placeholder => "Enter Last Name", class: "form-control input" %><br><br>
+    <%=f.text_field :email, :placeholder => "Enter Email", class: "form-control input" %><br><br>
+    <%=f.text_field :username, :placeholder => "Enter Username", class: "form-control input" %><br><br>
+    <%=f.password_field :password, :placeholder => "Enter Password", class: "form-control input" %><br><br>
+    <%=f.password_field :password_confirmation, :placeholder => "Confirm Password", class: "form-control input" %><br><br>
+    <%=f.button "Sign Up", class: "btn btn-lg btn-primary loginButton"%>
 <%end%>
+</div>
+
+
+</body>
+</html>
