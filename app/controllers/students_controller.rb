@@ -1,9 +1,12 @@
 class StudentsController < ApplicationController
+    before_action :redirect_to_login, only: [:new, :home]
+
     def home
 
     end
 
     def index
+        redirect_to '/signup'
 
     end
 
@@ -12,7 +15,13 @@ class StudentsController < ApplicationController
     end
 
     def create
-
+        @student = Student.new(student_params)
+        if @student.save
+            session[:student_id] = @student.id
+            redirect_to student_courses_path(@student)
+        else
+            render :new
+        end
     end
 
     def edit
@@ -26,6 +35,6 @@ class StudentsController < ApplicationController
     private
 
     def student_params
-        # params.require(:user).permit(:first_name, :last_name, :email, :username, :password, :password_confirmation)
+        params.require(:student).permit(:first_name, :last_name, :email, :username, :password, :password_confirmation)
     end
 end
