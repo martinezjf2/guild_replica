@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+    before_action :require_login
+    
     def index
         @course = Course.all
     end
