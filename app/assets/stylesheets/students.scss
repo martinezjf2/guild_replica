@@ -45,8 +45,18 @@ p {
     
 }
 
+// .col-lg-6 {
+//     padding-right: 0px;
+//     padding-left: 0px;;
+// }
+
+.topHeading {
+    // padding-right: 100px;
+
+}
+
 .subtitleHome {
-    display: inline-block;
+    // display: inline-block;
 }
 
 .guildLogo {
@@ -232,4 +242,14 @@ input:hover {
     border-color: royalblue;
 }
 
+.jumbotron {
+    // background-image: url("https://cdnshortpixel.ai/client/q_glossy,ret_img/https://www.guildeducation.com/wp-content/uploads/2019/07/hero-homepage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("students/hero-homepage.jpg");
+    background-size: cover;
+
+    
+}
 
