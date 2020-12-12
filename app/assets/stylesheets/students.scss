@@ -225,9 +225,9 @@ p {
     text-align: left;
 }
 @media (min-width: 768px) {
-.justify-md-center {    
-justify-content: center!important;
-}
+    .justify-md-center {    
+    justify-content: center!important;
+    }
 }
 
 .flex {
@@ -276,3 +276,13 @@ input:hover {
 .col-lg-6 {
     padding-left: 0;
 }
+
+.card {
+    width: 28rem;
+    // margin-top: 15px;
+}
+
+.cardsShow {
+    padding-bottom: 25px;
+}
+

@@ -4,30 +4,39 @@
 
 
 
-<section id="headingShow">
-      <div class="jumbotron studentsShowHeading">
-        <div class="row editProfile">
-            <h1 class="col-lg-6 studentsShowTitle">Good afternoon, <%= @student.first_name %> ! </h1><h5>Edit Profile</h5>
+    <section id="headingShow">
+        <div class="jumbotron studentsShowHeading">
+            <div class="row editProfile">
+                <h1 class="col-lg-6 studentsShowTitle">Good afternoon, <%= @student.first_name %> ! </h1><h5>Edit Profile</h5>
+                </div>
             </div>
         </div>
-      </div>
     </section>
 
 
 
-
-Take the next step
-
-<p>Guild helps students successfully enroll in academic programs that are changing their future. Join our growing number of students and graduates!</p>
-
-
-<h1>Programs and Courses</h1>
-
-<h3>Here i would list all the courses that were taken</h3>
-
-
-
-
+    <div class="container-fluid cardsShow">
+        <div class='row'>
+            <div class="col-md-6">
+                <div class="card w-100">
+                    <div class="card-body ">
+                        <h3 class="card-title">Take the next step</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Talk to an advisor!</h6>
+                        <p class="card-text">Guild helps students successfully enroll in academic programs that are changing their future. Join our growing number of students and graduates!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Programs and Courses</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Check it out!</h6>
+                        <p class="card-text">View or Add Courses to your yearly planner!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <%= render "layouts/footer" %>
 
