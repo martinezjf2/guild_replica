@@ -5,10 +5,10 @@ class StudentsController < ApplicationController
 
     end
 
-    def index
-        redirect_to '/signup'
-
+    def show
+        @student = Student.find_by(id: params[:id])
     end
+
 
     def new
         @student = Student.new
