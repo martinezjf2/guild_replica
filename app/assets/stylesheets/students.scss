@@ -158,9 +158,14 @@ p {
    padding-left: 0px;
 }
 
-#footer h6 {
+.footerTitle {
     // padding-bottom: 10px;
     padding: 35px 0px 5px
+}
+
+.partnerWithUs {
+    padding-top: 15px;
+
 }
 
 .bottomLink {
@@ -242,7 +247,7 @@ input:hover {
     border-color: royalblue;
 }
 
-.jumbotron {
+.studentsHome {
     // background-image: url("https://cdnshortpixel.ai/client/q_glossy,ret_img/https://www.guildeducation.com/wp-content/uploads/2019/07/hero-homepage.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -254,3 +259,20 @@ input:hover {
     
 }
 
+.studentsShowHeading {
+    background-color: #063347;
+    color: #fff;
+}
+
+.studentsShowTitle {
+    font-weight: bold;
+
+}
+
+.editProfile {
+    display: inline;
+}
+
+.col-lg-6 {
+    padding-left: 0;
+}

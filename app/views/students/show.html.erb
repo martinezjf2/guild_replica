@@ -1,6 +1,19 @@
 
-<h1>Good afternoon, <%= @student.first_name %> !</h1>
-<p>Edit Profile</p>
+
+<%= render "layouts/navbar" %>
+
+
+
+<section id="headingShow">
+      <div class="jumbotron studentsShowHeading">
+        <div class="row editProfile">
+            <h1 class="col-lg-6 studentsShowTitle">Good afternoon, <%= @student.first_name %> ! </h1><h5>Edit Profile</h5>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
 
 
 Take the next step
@@ -12,4 +25,9 @@ Take the next step
 
 <h3>Here i would list all the courses that were taken</h3>
 
+
+
+
+
+<%= render "layouts/footer" %>
 
