@@ -161,12 +161,63 @@ p {
 }
 
 #companyBrand {
-    background-color: rgb(250, 237, 167);
-    padding: 20px 20px 60px;
+    background-color: #fff2c2;
+    padding: 25px 10px 10px;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+
     
+}
+
+.testimonial-text {
+    margin-top: 28px;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 25px;
+
 
 }
 
-// .compTest {
-//     padding: 50px;
-// }
+.compTest {
+    padding: 20px 20px 60px;
+}
+
+.compTestBox {
+    max-width: 888px;
+    position: relative;
+    margin: 60px auto;
+    color: #313131;
+    font-size: 1.125em;
+    font-weight: 100;
+    text-align: center;
+}
+
+@media (min-width:769px) {
+    .compTestBox {
+        padding: 60px 15px;
+    }
+}
+
+.testimonial-text_author {
+    text-align: left;
+}
+@media (min-width: 768px) {
+.justify-md-center {    
+justify-content: center!important;
+}
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.m-t-gamma {
+    margin-top: 28px;
+}
+
+
