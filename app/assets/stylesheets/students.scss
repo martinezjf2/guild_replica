@@ -262,15 +262,18 @@ input:hover {
 .studentsShowHeading {
     background-color: #063347;
     color: #fff;
+    margin-bottom: 0px;
 }
 
 .studentsShowTitle {
     font-weight: bold;
+    letter-spacing: 1.3px;
 
 }
 
 .editProfile {
     display: inline;
+    letter-spacing: 1.3px;
 }
 
 .col-lg-6 {
@@ -279,10 +282,23 @@ input:hover {
 
 .card {
     width: 28rem;
+    background-color: #fff2c2;
+    border: none;
+    height: 200px;
     // margin-top: 15px;
 }
 
 .cardsShow {
-    padding-bottom: 25px;
+    padding: 25px 25px;
+    background-color: white;
 }
+
+.card-subtitle {
+    padding-top: 5px;
+}
+
+.Card {
+    padding-right: 15px;
+}
+
 
