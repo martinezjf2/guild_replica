@@ -46,6 +46,7 @@ p {
     color: #007d8c;
     font-weight: bold;
     text-align: left;
+    margin-bottom: -40px;
     
 }
 
@@ -67,25 +68,17 @@ p {
     }
 }
 
-// @media (max-width: 381px) {
-//     .studentsHome {
-//         padding-bottom: 635px;
-//     }
-// }
+.subtitleHome {
+    padding-top: 0;
+}
 
-// .col-lg-6 {
-//     padding-right: 0px;
-//     padding-left: 0px;;
-// }
+
 
 .topHeading {
     margin-top: 60px;
 
 }
 
-// .subtitleHome {
-//     display: inline-block;
-// }
 
 .guildLogo {
     margin-left: 1%;
@@ -99,9 +92,6 @@ p {
     padding: 10px 15px 30px
 }
 
-// .betterEducation {
-    
-// }
 
 .featureTitle {
     color: #119DA4;
