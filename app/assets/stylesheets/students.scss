@@ -50,18 +50,25 @@ p {
     
 }
 
+@media (max-width: 995px) {
+    .homeHeading {
+        margin-right: 80px;
+    }
+}
+
 
 @media (max-width:750px) {
     .topHeading {
         padding: 0px 15px;
-        text-align: center;
+        // text-align: center;
     }
     .homeHeading {
-        text-align: center;
+        // text-align: center;
     }
     .subtitleHome {
         padding-top: 5px;
         color: #037180;
+        margin-right: 50px;
     }
     .editProfile {
         justify-content: center; 
