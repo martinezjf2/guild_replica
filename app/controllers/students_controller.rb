@@ -25,10 +25,19 @@ class StudentsController < ApplicationController
     end
 
     def edit
-    
+        @student = Student.find_by(id: params[:id])
     end
 
     def update
+        @student = Student.find_by(id: params[:id])
+        @student.update(student_params)
+        if @student.save
+            redirect_to student_courses_path(@student)
+            flash[:message] = "Successfully Updated"
+        else
+            render :edit
+            flash[:message] = "Missing Fields, Please Try Again!"
+        end
 
     end
 
