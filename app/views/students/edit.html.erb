@@ -1,1 +1,35 @@
-this is where we edit the students information
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education as a Benefit - Guild Education</title>
+</head>
+<body>
+<%= render "layouts/navbar"%>
+
+
+<section class="text-center signInForm">
+    
+<div class="container">
+
+  <a href="/" class=" guildSignIn" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
+
+<h3 class="welcomeBack">Welcome Back!</h3>
+<div class="inputBox">
+
+<%= form_for @student do |f| %>
+    <%=f.text_field :first_name, :placeholder => "Enter First Name", class: "form-control signUpInput "%><br><br>
+    <%=f.text_field :last_name, :placeholder => "Enter Last Name", class: "form-control signUpInput " %><br><br>
+    <%=f.text_field :email, :placeholder => "Enter Email", class: "form-control signUpInput " %><br><br>
+    <%=f.text_field :username, :placeholder => "Enter Username", class: "form-control signUpInput " %><br><br>
+    <%=f.password_field :password, :placeholder => "Enter New Password", class: "form-control signUpInput " %><br><br>
+    <%=f.button "Sign Up", class: "btn btn-lg btn-default loginButton"%>
+<%end%>
+</div>
+
+</section>
+</body>
+
+</html>

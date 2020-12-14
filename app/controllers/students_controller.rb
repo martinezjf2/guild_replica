@@ -32,7 +32,7 @@ class StudentsController < ApplicationController
         @student = Student.find_by(id: params[:id])
         @student.update(student_params)
         if @student.save
-            redirect_to student_courses_path(@student)
+            redirect_to student_path(@student)
             flash[:message] = "Successfully Updated"
         else
             render :edit
