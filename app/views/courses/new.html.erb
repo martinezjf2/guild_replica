@@ -1,16 +1,22 @@
-This is where will add a new course
 
 
-
-
-
-<%= form_for :course, url: student_courses_path(@course.student_id) do |f| %>
-<%= f.hidden_field :student_id %>
-<%= f.text_field :name, :placeholder => "Enter Course Name" %> <br/><br/>
-<%= f.text_area :description, :placeholder => "Enter Brief Description"%><br/><br/>
-<%= f.text_field :grade, :placeholder => "Enter Your Grade" %><br/><br/>
-<%= f.text_field :year_taken, :placeholder => "Enter Year Taken" %><br/><br/>
-<%= f.submit "Save Course", :class => 'btn' %><br/><br/>
-
-
-<% end %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education as a Benefit - Guild Education</title>
+    </head>
+    <body>
+        <%= render "layouts/navbar"%>
+            <%= form_for :course, url: student_courses_path(@course.student_id) do |f| %>
+            <%= f.hidden_field :student_id %>
+            <%= f.text_field :name, :placeholder => "Enter Course Name" %> <br/><br/>
+            <%= f.text_area :description, :placeholder => "Enter Brief Description"%><br/><br/>
+            <%= f.text_field :grade, :placeholder => "Enter Your Grade" %><br/><br/>
+            <%= f.text_field :year_taken, :placeholder => "Enter Year Taken" %><br/><br/>
+            <%= f.submit "Save Course", :class => 'btn' %><br/><br/>
+            <% end %>
+        <%= render "layouts/footer"%>
+    </body>
+</html>

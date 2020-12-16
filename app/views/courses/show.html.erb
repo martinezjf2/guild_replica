@@ -1,6 +1,19 @@
-this is where we see the specific course
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education as a Benefit - Guild Education</title>
+    </head>
+    <body>
+        <%= render "layouts/navbar"%>
 
-<%= @course.name %>
-<%= @course.description %>
-<%= @course.year_taken %>
-<%= @course.grade %>
+            <%= @course.name %>
+            <%= @course.description %>
+            <%= @course.year_taken %>
+            <%= @course.grade %>
+
+        <%= render "layouts/footer"%>
+    </body>
+
+</html>
