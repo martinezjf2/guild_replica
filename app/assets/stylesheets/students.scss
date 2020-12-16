@@ -222,6 +222,13 @@ p {
 
 }
 
+.testimonialAuthor {
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+
 .compTest {
     padding: 20px 20px 60px;
 }
@@ -240,11 +247,16 @@ p {
     .compTestBox {
         padding: 60px 15px;
     }
+
+    // .testimonialAuthor {
+    //     text-align: center;
+    // }
 }
 
 .testimonial-text_author {
     text-align: left;
 }
+
 @media (min-width: 768px) {
     .justify-md-center {    
     justify-content: center!important;
@@ -352,5 +364,10 @@ input:hover {
 }
 
 .editProfileButton:hover {
-    color: blue;
+    color: skyblue;
+}
+
+.dropdownLink:hover {
+    color: skyblue;
+    text-decoration: underline;
 }

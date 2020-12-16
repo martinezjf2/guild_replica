@@ -32,7 +32,7 @@ class CoursesController < ApplicationController
     private
 
     def course_params
-        # params.require(:course).permit(#list attribute in keys)
+        params.require(:course).permit(:name, :description, :grade, :year_taken, :student_id)
     end
 
 end
