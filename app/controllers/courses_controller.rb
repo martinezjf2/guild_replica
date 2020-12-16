@@ -7,12 +7,13 @@ class CoursesController < ApplicationController
 
     def new
         @course = Course.new
+        @course.student_id = params[:student_id]
     end
 
     def create
-        @course = Course.new(course_params)
+        @course = current_student.courses.new(course_params)
         if @course.save 
-            redirect_to course_path(@course)
+            redirect_to student_course_path(@course.student_id, @course)
             flash[:message] = "Successfully Added!"
         else
             render :new
