@@ -10,9 +10,21 @@ this is where we see all the courses of the student
     <body>
         <%= render "layouts/navbar"%>
             <% @courses.each do |course| %>
-            <h1><%= course.name %></h1>
-            <h3><%= course.year_taken %></h3>
-            <p><%= course.description %></p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= course.name %></h5>
+                                <p class="card-text"><%= course.year_taken %></p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1></h1>
+            <h3></h3>
             <% end %>
         <%= render "layouts/footer"%>
     </body>
