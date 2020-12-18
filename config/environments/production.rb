@@ -9,7 +9,10 @@ Rails.application.configure do
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
+<<<<<<< HEAD
   
+=======
+>>>>>>> efef7c59bc8089904d1305f1db3e8a7e81026bba
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -22,7 +25,10 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> efef7c59bc8089904d1305f1db3e8a7e81026bba
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
