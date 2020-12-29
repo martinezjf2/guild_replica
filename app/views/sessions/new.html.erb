@@ -15,8 +15,8 @@
 
       <a href="/" class=" guildSignIn" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
       <h3 class="welcomeBack">Welcome Back!</h3>
-          <div class="inputBox">
-              <%= form_for :student, class: "form-signin", url: login_path do |f| %>
+          <div class="inputBox ">
+              <%= form_for :student, class: "form-signin justify-content-center", url: login_path do |f| %>
 
                 <%=f.text_field :username, class: "form-control input", :placeholder => 'Enter Username' %>
                 <%=f.password_field :password, class: "form-control input", :placeholder => 'Enter Password' %>
