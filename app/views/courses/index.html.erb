@@ -21,17 +21,18 @@
         </div>
     </section>
     
+        <div class="card-deck">                       
             <% @courses.each do |course| %>
-                <div class="card-deck">                       
-                    <div class="card col-lg-4 col-md-6 col-sm-12">
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><%= course.name %></h5>
-                            <p class="card-text"><%= course.year_taken %></p>
-                            <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-primary" %>
-                        </div>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><%= course.name %></h5>
+                        <p class="card-text"><%= course.year_taken %></p>
+                        <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-primary" %>
                     </div>
                 </div>
             <% end %>
+        </div>
+
         <%= render "layouts/footer"%>
     </body>
 </html>
