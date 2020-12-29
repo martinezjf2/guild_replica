@@ -22,19 +22,15 @@
     </section>
     
             <% @courses.each do |course| %>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card-deck">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title"><%= course.name %></h5>
-                                <p class="card-text"><%= course.year_taken %></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                <div class="card-deck">                       
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><%= course.name %></h5>
+                            <p class="card-text"><%= course.year_taken %></p>
+                            <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-primary" %>
                         </div>
                     </div>
                 </div>
-            </div>
             <% end %>
         <%= render "layouts/footer"%>
     </body>
