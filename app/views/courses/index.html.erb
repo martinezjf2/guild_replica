@@ -21,9 +21,9 @@
         </div>
     </section>
     
-        <div class="card-deck">                       
+        <div class="card-columns">                       
             <% @courses.each do |course| %>
-                <div class="card col-lg-4 col-md-6 col-sm-12">
+                <div class="card col-lg-6 col-md-4 col-sm-12">
                     <div class="card-body text-center">
                         <h5 class="card-title"><%= course.name %></h5>
                         <p class="card-text"><%= course.year_taken %></p>

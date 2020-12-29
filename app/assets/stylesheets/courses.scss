@@ -4,14 +4,21 @@
 
 
 
-.card {
-    margin: 5px 20px;   
-}
-.card-deck {
+
+.card-columns{
     margin: 10px 10px;
     padding: 20px 6px;
 }
 
 body {
     background-color: #f8f8f8;
+}
+
+
+.col-md-4 {
+    max-width: 100%;
+}
+
+.col-lg-6 {
+    max-width: 100%;
 }
