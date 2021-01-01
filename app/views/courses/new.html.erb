@@ -9,20 +9,23 @@
     </head>
     <body class="text-center">
         <%= render "layouts/navbar"%>
-
+<div class="section">
+  <a href="/students/<%= current_student.id%>" class="guild" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
 
     <div class="container-fluid newCourseForm">
+
             <%= form_for :course, url: student_courses_path(@course.student_id) do |f| %>
     <div class="textInputs">
             <%= f.hidden_field :student_id %>
             <%= f.text_field :name, :placeholder => "Enter Course Name", class: "form-control Input"%> 
             <%= f.text_field :grade, :placeholder => "Enter Your Grade", class: "form-control Input" %>
             <%= f.text_field :year_taken, :placeholder => "Enter Year Taken", class: "form-control Input" %>
-            <%= f.text_area :description, :placeholder => "Enter Brief Description", class: "form-control Input description"%>
+            <%= f.text_area :description, :placeholder => "Enter Brief Description", class: "form-control Input"%>
 </div>
             <%= f.submit "Save Course", :class => 'btn btn-lg btn-default saveCourse' %>
 
             <% end %>
+    </div>
     </div>
 
 
