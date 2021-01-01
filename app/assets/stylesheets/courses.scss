@@ -24,5 +24,40 @@ body {
 }
 
 .newCourseForm {
-    padding: 10rem 6rem;
+    padding: 10rem 1rem;
+    justify-content: center;
+}
+
+.saveCourse {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 24px;
+    width: 272px;
+    background-color: #007d8c;
+    letter-spacing: 1.3px;
+    color: #fff;
+}
+
+.saveCourse:hover {
+    background-color: #037180;
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.Input {
+    display: block;
+    margin: 5px;
+    
+}
+
+.textInputs {
+    justify-content: center;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+textarea.form-control {
+    height: 120px;
 }
