@@ -8,11 +8,18 @@
     <body>
         <%= render "layouts/navbar"%>
 
-            <%= @course.name %>
-            <%= @course.description %>
-            <%= @course.year_taken %>
-            <%= @course.grade %>
-
+        <section id="showCourse text-left">
+            <div class="container-fluid">
+                <div class="courseDetails">
+                    <h1><%= @course.name %></h1>
+                    <%= @course.year_taken %>
+                    <h3>Grade: <%= @course.grade %></h3>
+                    <p>Description: <%= @course.description %></p>
+                    
+                    
+                </div> 
+            </div>
+        </section>
         <%= render "layouts/footer"%>
     </body>
 
