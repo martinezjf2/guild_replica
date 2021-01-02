@@ -9,14 +9,42 @@
         <%= render "layouts/navbar"%>
 
         <section id="showCourse text-left">
+
             <div class="container-fluid">
-                <div class="courseDetails">
+
+                <div class="courseDetails text-center">
+
                     <h1><%= @course.name %></h1>
                     <%= @course.year_taken %>
-                    <h3>Grade: <%= @course.grade %></h3>
-                    <p>Description: <%= @course.description %></p>
                     
-                    
+
+                        <div class="card-columns justify-content-center">
+                            <div class="card col-sm-12 col-md-6 col-lg-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Grade:</h4>
+                                <h1 class="card-text"><%= @course.grade %></h1>
+                                
+                            </div>
+                            </div>
+                       
+                        
+                            <div class="card col-sm-12 col-md-6 col-lg-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Description:</h4>
+                                <p class="card-text"><%= @course.description %></p>
+                                
+                            </div>
+                            </div>
+
+                            <div class="card col-sm-12 col-md-6 col-lg-6">
+                            <div class="card-body">
+                                <h4 class="card-title">Would you like to edit?</h4>
+                                <p class="card-text"><%= @course.description %></p>
+                                
+                            </div>
+                            </div>     
+
+                        </div>
                 </div> 
             </div>
         </section>
