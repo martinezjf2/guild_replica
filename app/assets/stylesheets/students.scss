@@ -23,9 +23,9 @@ p {
 }
 
 .homeLearnMore {
-     background-color: #007d8c;
-     border: none;
-     padding: 10px 50px;
+    background-color: #007d8c;
+    border: none;
+    padding: 10px 50px;
     margin-top: 20px;
     color: #fff;
     letter-spacing: 1.3px;
@@ -67,10 +67,9 @@ p {
         color: #037180;
         margin-right: 60px;
     }
-    .editProfile {
-        justify-content: center; 
-    }
+    
 }
+
 
 .subtitleHome {
     padding-top: 0;
@@ -305,6 +304,7 @@ input:hover {
     font-weight: bold;
     letter-spacing: 1.3px;
     padding-left: 0;
+    margin-left: 12px;
 
 }
 
@@ -312,6 +312,7 @@ input:hover {
     display: inline;
     letter-spacing: 1.3px;
 }
+
 
 .card {
     width: 28rem;
@@ -367,13 +368,25 @@ input:hover {
     padding-right: 0;
     color: white;
     font-size: 21px;
+    margin-left: 14px;
+
 }
 
 .editProfileButton:hover {
     color: skyblue;
 }
 
-.dropdownLink:hover {
+.dropdown-item:hover {
     color: skyblue;
-    text-decoration: underline;
+   ;
 }
+
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: underline
+}
+
+.dropdown-item {
+    justify-content: left;
+}
+
