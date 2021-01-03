@@ -49,6 +49,12 @@
                 </div> 
             </div>
         </section>
+
+            <section id="joinBenefits">
+            <h2 class="endQuestion">Would you like to add another course?</h2>
+                    <%= link_to 'Add A Course', new_student_course_path(@course.student_id), class: "btn btn-default btn-lg signUpButton" %>
+            </section>
+
         <%= render "layouts/footer"%>
     </body>
 
