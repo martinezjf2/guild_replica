@@ -12,111 +12,19 @@
 <%= render "layouts/navbar"%>
     
 
-<section id="heading">
-  <div class="jumbotron studentsHome">
-    <div class="row topHeading">
-      <div class="col-lg-6 ">
-        <h1 class="display-4 homeHeading ">Work is changing. So are benefits.</h1>
-      </div>
-    </div>
-    
-    <div class="row topHeading">
-      <div class="col-lg-6 col-md-6">
-        <p class="lead subtitleHome">Prepare for the future with a program designed to enhance your workforce, and satisfy the needs of your business.</p>
-        <p class="lead">
-        <button class="btn btn-default btn-lg homeLearnMore " href="#" role="button">Learn More</button>
-        </p>
-      </div>
-    </div>
-    
-  </div>
-</section>
+<%= render "layouts/heading"%>
 
-    <!-- Testimonials -->
 
-  <section id="features"> 
+  <%= render "layouts/features"%>
+
   
-  <div>
-  <h6 class="investPeople">INVEST IN YOUR PEOPLE. ADD VALUE TO YOUR BUSINESS.</h6>
-  <h2 class="betterEducation">We do education benefits <span class="highlight">better.</span></h2>
-  <p class="featureSubtitle">We're transforming tradition tuition reimbursement programs into a strategic investment by increasing employee recruitment, retention, upskilling and brand equity.</p>
-  </div>
-
-  <div class="row featuresTogether">
-  <div class="feature-box col-lg-4">
-    <h3 class="featureTitle">284%</h3>
-    <h4 class="feature-title">Positive ROI</h4>
-    <p>Return on investment of $2.84 for every $1 spent on education.</p>
-  </div>
-
-  <div class="feature-box col-lg-4">
-    <h3 class="featureTitle">4/5</h3>
-    <h4 class="feature-title">Employee Satisfaction</h4>
-    <p>4 in 5 employees want better benefits over a pay raise.</p>
-  </div>
-
-  <div class="feature-box col-lg-4">
-    <h3 class="featureTitle">54%</h3>
-    <h4 class="feature-title">Strategic Talent Driver</h4>
-    <p>Percentage of workers who will need retraining or reskilling by 2022.</p>
-  </div>
-
-  </div>
-  </section>
   
+<%= render "layouts/companyCarousel"%>
 
-  <section id="companyBrand">
-    <div class="container-fluid text-center compTest">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner container-fluid compTextBox">
+  
+<%= render "layouts/joinBenefits"%>
 
-            <div class="carousel-item active">
-              <img src="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img/https://www.guildeducation.com/wp-content/uploads/2019/08/Tacobell_Black@5x.png" width="" data-src="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img/https://www.guildeducation.com/wp-content/uploads/2019/08/Tacobell_Black@5x.png" alt="Tacobell_Black logo" class="testimonial__image m-auto lazyloaded">
-                <div class="testimonial-text">
-                  "When we surveyed our employees, education support was one of the top three things they asked for. The barriers to achieving their education goals were time, money and support. Guild delivers on all of these needs through access to online classes, financial aid guidance, tuition assistance and a personal counselor to support each student in real time."
-                </div>
-              <div class="testimonial-text_author m-t-gamma flex align-center justify-md-center">
-                <div class="testimonial-text_author_info">
-                  <p class="testimonialAuthor"><strong>FRANK TUCKER, </strong><span>GLOBAL CHIEF PEOPLE OFFICER AT TACO BELL</span></p>                
-                </div>              
-              </div>
-            </div> 
 
-            <div class="carousel-item">
-              <%= image_tag("students/chip.png", width: '210px', class: "testimonial__image m-auto lazyloaded") %> 
-              <!-- <span><h1 style="font-weight: bold, display: inline, color: black, font-size: 1px">CHIPOTLE</h1></span> -->
-                <div class="testimonial-text">
-                "I've used Guild as a stepping stone into my continued education through Bellevue University.
-                To me getting my degree is showing to others that you still can continue to thrive when the world sets other lower expectations based on events within your life. That you truly are in control of becoming whoever you want to be."
-                </div>
-              <div class="testimonial-text_author m-t-gamma flex align-center justify-md-center">
-                <div class="testimonial-text_author_info">
-                  <strong>KATHERINE B, </strong><span>GENERAL MANAGER AT CHIPOTLE</span>                
-                </div>              
-              </div>         
-            </div> 
-
-            <div class="carousel-item ">
-            <img src="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img/https://www.guildeducation.com/wp-content/uploads/2019/08/walmart-black-logo.png" width="" data-src="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img/https://www.guildeducation.com/wp-content/uploads/2019/08/walmart-black-logo.png" alt="Tacobell_Black logo" class="testimonial__image m-auto lazyloaded"/>
-                <div class="testimonial-text">
-                  "The impact on associates and their ties to Walmart now that we have the benefit ... is probably the most exciting thing we see, and it inspires all of us within Walmart."
-                </div>
-              <div class="testimonial-text_author m-t-gamma flex align-center justify-md-center">
-                <div class="testimonial-text_author_info">
-                  <strong>ELLIE BERTANI, </strong><span>LEARNING STRATEGY & INNOVATION, WALMART</span>                
-                </div>              
-              </div>
-            </div> 
-
-        </div>
-      </div>
-  </section>
-
-<section id="joinBenefits">
-<h2 class="endQuestion">Are you ready to change your benefits and invest in your workforce?</h2>
-        <%= link_to 'SIGN UP', signup_path, class: "btn btn-default btn-lg signUpButton" %>
-
-</section>
 
 <%= render "layouts/footer"%>
  
