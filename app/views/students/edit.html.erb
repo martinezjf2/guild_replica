@@ -16,7 +16,7 @@
 
   <a href="/students/<%= @student.id %>" class="guildSignIn" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
 
-<h3 class="welcomeBack">Welcome Back!</h3>
+<h3 class="welcomeBack">Edit Your Profile</h3>
 <div class="inputBox">
 
 <%= form_for @student do |f| %>
@@ -25,7 +25,7 @@
     <%=f.text_field :email, :placeholder => "Enter Email", class: "form-control signUpInput " %><br><br>
     <%=f.text_field :username, :placeholder => "Enter Username", class: "form-control signUpInput " %><br><br>
     <%=f.password_field :password, :placeholder => "Enter New Password", class: "form-control signUpInput " %><br><br>
-    <%=f.button "Sign Up", class: "btn btn-lg btn-default loginButton"%>
+    <%=f.button "Save Profile", class: "btn btn-lg btn-default loginButton"%>
 <%end%>
 </div>
 

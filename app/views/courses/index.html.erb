@@ -25,9 +25,9 @@
             <% @courses.each do |course| %>
                 <div class="card col-lg-6 col-md-4 col-sm-12">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><%= course.name %></h5>
+                        <h4 class="card-title"><%= course.name %></h4>
                         <p class="card-text"><%= course.year_taken %></p>
-                        <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-primary" %>
+                        <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-primary loginButton" %>
                     </div>
                 </div>
             <% end %>
