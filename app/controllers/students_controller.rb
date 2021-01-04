@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-    # before_action :redirect_to_login, only: [:new]
+    before_action :redirect_to_login, only: [:new]
 
     def home
 
