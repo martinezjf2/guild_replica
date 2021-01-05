@@ -31,8 +31,9 @@ class CoursesController < ApplicationController
 
     def update
         @course = Course.find_by(id: params[:id])
-        if @course.update(course_params)
-        
+        binding.pry
+
+       if @course.update(course_params)
             redirect_to student_courses_path(@course.student_id)
         else
             render :edit
