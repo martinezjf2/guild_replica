@@ -30,8 +30,8 @@ class CoursesController < ApplicationController
 
     def update
         @course = Course.find_by(id: params[:id])
-        @course.update(course_params)
-        if @course.save
+        if @course.update(course_params)
+        
             redirect_to student_courses_path(@course.student_id)
         else
             render :edit
@@ -41,7 +41,9 @@ class CoursesController < ApplicationController
 
     def destroy
         @course = Course.find_by(id: params[:id])
-        @course.delete 
+        @course.destroy
+        redirect_to student_courses_path(@course.student_id)
+            
     end
 
     private
