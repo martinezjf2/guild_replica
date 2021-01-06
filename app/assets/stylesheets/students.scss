@@ -191,7 +191,9 @@ p {
 }
 
 .footerWrap {
-    padding: 50px 20px 50px
+    padding: 50px 20px 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .guild {
@@ -253,6 +255,8 @@ p {
 
 .compTest {
     padding: 20px 20px 60px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .compTestBox {
@@ -269,10 +273,6 @@ p {
     .compTestBox {
         padding: 60px 15px;
     }
-
-    // .testimonialAuthor {
-    //     text-align: center;
-    // }
 }
 
 .testimonial-text_author {
@@ -436,7 +436,7 @@ input:hover {
     margin-right: 100px;
 }
 
-@media (max-width:769px) {
+@media (max-width:989px) {
     .provenRes {
         padding: 2rem 25px;
         margin-left: 25px;
@@ -449,11 +449,22 @@ input:hover {
     }
 
     .nav {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     
     .nav2 {
-        margin-right: 10px;
+        margin-right: 5px;
+    }
+
+    .compTest {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .footerWrap {
+        padding: 50px 20px 50px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
