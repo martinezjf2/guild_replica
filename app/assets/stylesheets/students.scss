@@ -20,7 +20,17 @@ p {
 
 .navbar {
     background-color: white;
+    
 }
+
+.nav {
+    margin-left: 100px;
+}
+
+.nav2 {
+    margin-right: 100px;
+}
+
 
 .homeLearnMore {
     background-color: #007d8c;
@@ -80,6 +90,8 @@ p {
 
 .topHeading {
     margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
 
 }
 
@@ -429,6 +441,19 @@ input:hover {
         padding: 2rem 25px;
         margin-left: 25px;
         margin-right: 25px;
+    }
+    .topHeading {
+        margin-left: 5px;
+        margin-right: 5px;
+    
+    }
+
+    .nav {
+        margin-left: 10px;
+    }
+    
+    .nav2 {
+        margin-right: 10px;
     }
 }
 
