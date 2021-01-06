@@ -2,3 +2,95 @@
 @import "courses";
 @import "sessions";
 @import "students";
+
+
+@media (max-width:989px) {
+    .provenRes {
+        padding: 2rem 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .topHeading {
+        margin-left: 5px;
+        margin-right: 5px;
+    
+    }
+
+    .nav {
+        margin-left: 5px;
+    }
+    
+    .nav2 {
+        margin-right: 5px;
+    }
+
+    .compTest {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .footerWrap {
+        padding: 50px 20px 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .showHeading {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .cardsShow {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .changeBetter {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+
+.feature-box {
+    padding: 1.5rem 1.2rem;
+}
+
+.resultHead {
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .justify-md-center {    
+    justify-content: center!important;
+    }
+}
+
+@media (min-width:769px) {
+    .compTestBox {
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 995px) {
+    .homeHeading {
+        margin-right: 80px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .topHeading {
+        padding: 0px 15px;
+        // text-align: center;
+    }
+    
+    .subtitleHome {
+        padding-top: 5px;
+        color: #037180;
+        margin-right: 60px;
+    }
+    
+}
