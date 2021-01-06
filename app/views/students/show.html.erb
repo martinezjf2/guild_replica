@@ -12,15 +12,8 @@
 
 
 
-    <section id="headingShow">
-        <div class="jumbotron studentsShowHeading">
-            <div class="row editProfile">
-                <h1 class="col-lg-6 col-sm-12 studentsShowTitle">Good afternoon, <%= @student.first_name %>!</h1>
-                <%= link_to 'Edit Profile', edit_student_path(@student), class: "btn editProfileButton" %>
-                </div>
-            </div>
-        </div>
-    </section>
+<%= render "layouts/studentHeader" %>
+    
 
 
 
@@ -45,17 +38,8 @@
             </div>
         </div>
 
-        <div class="changeForBetter">
-            <div class="changeBetterSubHeading">
-                <h6>CHANGE FOR THE BETTER</h6>
-            </div>
-            <div>
-               <h2 class="changeBetterHeading">Trade in your traditional tuition reimbursement program</h2> 
-            </div>
-            <div class="changeBetterPara">
-                <p>We help HR and L&D leaders morpth their standard tuition reimubursement from a non-strategic cost center into a data-driven benefit and talent strategy</p>
-            </div>
-        </div>
+<%= render "layouts/changeForBetter" %>
+        
 
 <%= render "layouts/footer" %>
 </body>
