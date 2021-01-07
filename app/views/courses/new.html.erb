@@ -9,6 +9,8 @@
     </head>
     <body class="text-center">
         <%= render "layouts/navbar"%>
+        <%= render "layouts/alert" %>
+
             <div class="section">
                 <a href="/students/<%= current_student.id%>" class="guild" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
                     <div class="container-fluid newCourseForm">

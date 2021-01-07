@@ -20,7 +20,7 @@ class StudentsController < ApplicationController
             session[:student_id] = @student.id
             redirect_to student_path(@student), notice: "User Successfully Created!"
         else
-            render :new, alert: "Missing Fields, Please Try Again."
+            redirect_to '/signup', alert: "Missing Fields, Please Try Again."
         end
     end
 
@@ -35,7 +35,7 @@ class StudentsController < ApplicationController
             redirect_to student_path(@student), notice: "Successfully Updated!"
             # flash[:notice] = "Successfully Updated"
         else
-            render :edit, alert: "Missing Fields, Please Try Again!"
+            redirect_to "/students/#{@student.id}/edit", alert: "Missing Fields, Please Try Again!"
         end
 
     end
