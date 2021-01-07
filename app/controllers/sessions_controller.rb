@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
     def destroy
         session.delete :student_id
-        redirect_to "/"
+        redirect_to "/", notice: "You 've been logged out successfully!"
 
     end
 

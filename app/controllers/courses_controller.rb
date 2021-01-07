@@ -14,10 +14,9 @@ class CoursesController < ApplicationController
     def create
         @course = current_student.courses.new(course_params)
         if @course.save 
-            redirect_to student_course_path(@course.student_id, @course)
-            flash[:message] = "Successfully Added!"
+            redirect_to student_course_path(@course.student_id, @course), notice: "Course Successfully Added!"
         else
-            render :new
+            render :new, alert: "Not Saved, Please fill out the requirements!"
         end
     end
 
@@ -34,9 +33,9 @@ class CoursesController < ApplicationController
         # binding.pry
 
        if @course.update(course_params)
-            redirect_to student_courses_path(@course.student_id)
+            redirect_to student_courses_path(@course.student_id), notice: "Course Successfully Updated!"
         else
-            render :edit
+            render :edit, alert: "Please fill out the Missing Fields."
         end
 
     end
@@ -44,7 +43,7 @@ class CoursesController < ApplicationController
     def destroy
         @course = Course.find_by(id: params[:id])
         @course.destroy
-        redirect_to student_courses_path(@course.student_id)
+        redirect_to student_courses_path(@course.student_id), notice: "Course Successfully Deleted!"
             
     end
 
