@@ -14,6 +14,8 @@ class CoursesController < ApplicationController
     def create
         @course = current_student.courses.new(course_params)
         if @course.save 
+            current_student.courses << @course 
+            # binding.pry
             redirect_to student_course_path(@course.student_id, @course), notice: "Course Successfully Added!"
         else
             render :new, alert: "Not Saved, Please fill out the requirements!"
