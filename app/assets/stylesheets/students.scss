@@ -92,8 +92,8 @@ p {
 
 #features {
     text-align: center;
-    margin: 15px;
-    padding: 10px 15px 30px
+    margin: 15px 0px;
+    padding: 10px 0px 30px
 }
 
 .feature {
@@ -114,19 +114,22 @@ p {
 }
 
 .featureSubtitle {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .featuresTogether {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .feature-box {
-    padding: 10px
+    padding: 0px
 }
 
+div.feature-box.col-lg-4 {
+    padding: 0px
+}
 // Join Benefits Section 
 
 #joinBenefits {

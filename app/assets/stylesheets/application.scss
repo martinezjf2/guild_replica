@@ -53,6 +53,16 @@
     .joinBen {
         margin-left: 5px;
         margin-right: 5px;
+    } 
+}
+
+@media (min-width: 989px) {
+    div.feature-box.col-lg-4 {
+        padding: 25px;
+    }
+
+    .featureSubtitle {
+        padding: 0px 100px;
     }
 }
 
