@@ -40,6 +40,14 @@ class StudentsController < ApplicationController
 
     end
 
+    def destroy
+        @student = current_student
+        @student.delete
+        binding.pry
+        session.clear
+        redirect_to "/", notice: "Your account was Deleted Successfully!"
+    end
+
     private
 
     def student_params

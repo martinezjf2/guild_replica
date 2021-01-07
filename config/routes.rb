@@ -17,6 +17,7 @@ post '/login', to: 'sessions#create'
 get '/logout', to: 'sessions#destroy'
 patch '/students/:id/courses', to: 'courses#update'
 delete '/logout', to: 'sessions#destroy'
+delete '/', to: 'students#destroy'
 
 
 end

@@ -28,6 +28,8 @@
     <%=f.text_field :username, :placeholder => "Enter Username", class: "form-control signUpInput " %><br><br>
     <%=f.password_field :password, :placeholder => "Enter New Password", class: "form-control signUpInput " %><br><br>
     <%=f.button "Save Profile", class: "btn btn-lg btn-default loginButton"%>
+    <%= link_to "Delete Account", root_path, method: :delete, data: { confirm: "Really?" }, class: 'btn btn-lg btn-default saveCourse' %>
+
 <%end%>
 
 </div>
