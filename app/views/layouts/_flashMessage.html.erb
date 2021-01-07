@@ -2,13 +2,20 @@
 
 
 <% flash.each do |type, msg| %>
-    <% if flash = "alert" %>
-        <div>
-            <%= msg %>
+    <% if type = "alert" %>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+           <strong><%= msg %></strong>
+           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button> 
         </div>
-    <% elsif flash = "notice" %>
-        <div>
-            <%= msg %>
+    <% elsif type = "notice" %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+           <strong><%= msg %></strong>
+           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button> 
         </div>
     <% end %>
 <% end %>
+
