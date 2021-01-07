@@ -2,7 +2,13 @@
 
 
 <% flash.each do |type, msg| %>
-  <div>
-    <%= msg %>
-  </div>
+    <% if flash = "alert" %>
+        <div>
+            <%= msg %>
+        </div>
+    <% elsif flash = "notice" %>
+        <div>
+            <%= msg %>
+        </div>
+    <% end %>
 <% end %>
