@@ -135,6 +135,11 @@ p {
     background-color: rgba(194,228,243,.25);
 }
 
+.joinBen {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .signUpButton {
     background-color: #007d8c;
     margin-top: 40px;
@@ -215,7 +220,7 @@ p {
 
 #companyBrand {
     background-color: #fff2c2;
-    padding: 25px 10px 10px;
+    padding: 30px 10px 50px;
     margin: 0;
     vertical-align: baseline;
     box-sizing: border-box;
@@ -241,8 +246,8 @@ p {
 
 .compTest {
     padding: 20px 20px 60px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .compTestBox {
@@ -261,7 +266,13 @@ p {
 }
 
 
+.feature-box {
+    padding: 1.5rem 1.2rem;
+}
 
+.resultHead {
+    padding-bottom: 10px;
+}
 
 
 .flex {
