@@ -17,6 +17,13 @@
       <div class="container-fluid newCourseForm">
       
       <h3 class="welcomeBack">Welcome Back!</h3>
+
+      <% flash.each do |type, msg| %>
+  <div>
+  <%binding.pry%>
+    <%= msg %>
+  </div>
+<% end %>
           
               <%= form_for :student, url: login_path do |f| %>
               <div class="textInputs">
