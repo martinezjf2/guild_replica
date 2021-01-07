@@ -1,27 +1,27 @@
 
 
-<% #if @student.errors.any? %>
+<% if flash.any? %>
     <% flash.each do |type, msg| %>
         <% if type = "alert" %>
             <div class="text-center">
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong><%= msg %></strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <strong><%= msg %></strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                     </button> 
                 </div>
             </div>
         <% elsif type = "notice" %>
             <div class="text-center">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong><%= msg %></strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <strong><%= msg %></strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                     </button> 
                 </div>
             </div>
 
         <% end %>
     <% end %>
-<% #end %>
+<% end %>
 
