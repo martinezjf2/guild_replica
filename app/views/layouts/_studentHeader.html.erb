@@ -9,7 +9,7 @@
         <div class="showHeading">
             <div class="row editProfile">
                 <h1 class="col-lg-6 col-sm-12 studentsShowTitle">Good Afternoon, <%= current_student.first_name %>!</h1>
-                <%= link_to 'Edit Profile', edit_student_path(current_student.first_name), class: "btn editProfileButton" %>
+                <%= link_to 'Edit Profile', edit_student_path(current_student.id), class: "btn editProfileButton" %>
                 </div>
             </div>
             </div>
