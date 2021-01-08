@@ -8,15 +8,16 @@ class CoursesController < ApplicationController
 
     def new
         @course = Course.new
-        binding.pry
         @course.student_id = params[:student_id]
-        binding.pry
+        # binding.pry
+
+
     end
 
     def create
-        @course = current_student.courses.new(course_params)
-        if @course.save 
-            current_student.courses << @course 
+        @course = Course.new(course_params)
+        # binding.pry
+        if @course.save
             # binding.pry
             redirect_to student_course_path(@course.student_id, @course), notice: "Course Successfully Added!"
         else
@@ -55,6 +56,10 @@ class CoursesController < ApplicationController
 
     def course_params
         params.require(:course).permit(:name, :description, :grade, :year_taken, :student_id)
+    end
+
+    def set_student
+        @student = Student.find(id: params[:id])
     end
 
 end

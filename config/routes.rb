@@ -19,5 +19,7 @@ patch '/students/:id/courses', to: 'courses#update'
 delete '/logout', to: 'sessions#destroy'
 delete '/', to: 'students#destroy'
 
+post '/students/:id/courses/new', to: 'courses#create'
+
 
 end
