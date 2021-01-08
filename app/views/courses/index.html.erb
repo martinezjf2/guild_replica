@@ -15,18 +15,20 @@
 
 
 
-    <% if @student.courses %>
-        <div class="card-columns">                       
-            <% @student.courses.each do |course| %>
+    <% if @courses %>            
+            <% @courses.each do |course| %>
+            <div class="row">
+            <div class="card-columns"> 
                 <div class="card col-lg-6 col-md-4 col-sm-12">
                     <div class="card-body text-center">
                         <h4 class="card-title"><%= course.name %></h4>
                         <p class="card-text"><%= course.year_taken %></p>
                         <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton" %>
                     </div>
+                    </div>
                 </div>
+                 </div>
             <% end %>
-        </div>
      <% end %>
 
 

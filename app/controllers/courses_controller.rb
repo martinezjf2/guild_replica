@@ -3,26 +3,24 @@ class CoursesController < ApplicationController
     
     
     def index
-        # binding.pry
         @student = Student.find_by(id: params[:student_id])
+        @courses = @student.courses
 
-        # binding.pry
+        
         
     end
 
     def new
-        # binding.pry
+        
         @course = current_student.courses.new
-        # binding.pry
-        # @course.student_id = params[:student_id]
-        # binding.pry
+        
     end
 
     def create
         @course = current_student.courses.new(course_params)
-        # binding.pry
+        
         if @course.save
-            # binding.pry
+            
             redirect_to student_course_path(@course.student_id, @course), notice: "Course Successfully Added!"
         else
             render :new, alert: "Not Saved, Please fill out the requirements!"
