@@ -8,7 +8,9 @@ class CoursesController < ApplicationController
 
     def new
         @course = Course.new
+        binding.pry
         @course.student_id = params[:student_id]
+        binding.pry
     end
 
     def create
