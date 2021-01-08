@@ -15,9 +15,9 @@
 
 
 
-    <% if @courses %>
+    <% if @student.courses %>
         <div class="card-columns">                       
-            <% @courses.each do |course| %>
+            <% @student.courses.each do |course| %>
                 <div class="card col-lg-6 col-md-4 col-sm-12">
                     <div class="card-body text-center">
                         <h4 class="card-title"><%= course.name %></h4>
@@ -27,7 +27,7 @@
                 </div>
             <% end %>
         </div>
-            <% end %>
+     <% end %>
 
 
         <%= render "layouts/addACourse"%>

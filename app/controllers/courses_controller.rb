@@ -3,7 +3,11 @@ class CoursesController < ApplicationController
     
     
     def index
-        @courses = Course.all
+        # binding.pry
+        @student = Student.find_by(id: params[:student_id])
+
+        # binding.pry
+        
     end
 
     def new
