@@ -7,15 +7,15 @@ class CoursesController < ApplicationController
     end
 
     def new
-        @course = Course.new
-        @course.student_id = params[:student_id]
         # binding.pry
-
-
+        @course = current_student.courses.new
+        # binding.pry
+        # @course.student_id = params[:student_id]
+        # binding.pry
     end
 
     def create
-        @course = Course.new(course_params)
+        @course = current_student.courses.new(course_params)
         # binding.pry
         if @course.save
             # binding.pry
@@ -55,11 +55,11 @@ class CoursesController < ApplicationController
     private
 
     def course_params
-        params.require(:course).permit(:name, :description, :grade, :year_taken, :student_id)
+        params.require(:course).permit(:name, :description, :grade, :year_taken)
     end
 
     def set_student
-        @student = Student.find(id: params[:id])
+        @student = current_student
     end
 
 end

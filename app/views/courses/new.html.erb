@@ -14,7 +14,7 @@
             <div class="section">
                 <a href="/students/<%= current_student.id%>" class="guild" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
                     <div class="container-fluid newCourseForm">
-                        <%= form_for :course, url: student_courses_path(@course.student_id) do |f| %>
+                        <%= form_for @course, :url => {:controller => "courses", :action => "create" } do |f| %>
                                 <div class="textInputs">
                                     <%= f.hidden_field :student_id %>
                                     <%= f.text_field :name, :placeholder => "Enter Course Name", class: "form-control Input"%> 
