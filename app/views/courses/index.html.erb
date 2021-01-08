@@ -16,25 +16,22 @@
 
 
     <% if @courses %> 
-            <div class="row">
-
+        <div class="row courses justify-content-center">
             <% @courses.each do |course| %>
-    <div class="displayCourses">           
-
-                 <div class= "col-lg-4 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h4 class="card-title"><%= course.name %></h4>
-                        <p class="card-text"><%= course.year_taken %></p>
-                        <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton" %>                  
+                <div class="displayCourses">           
+                    <div class= "col-lg-4 col-md-6 col-sm-12">
+                        <div class="card indCard">
+                            <div class="card-body text-center">
+                                <h4 class="card-title"><%= course.name %></h4>
+                                <p class="card-text"><%= course.year_taken %></p>
+                                <%= link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton" %>                  
+                            </div>
+                        </div>
                     </div>
-                    </div>
-               </div>
-                 </div>
-
+                </div>
             <% end %>
-                 </div>
-     <% end %>
+        </div>
+    <% end %>
 
 
         <%= render "layouts/addACourse"%>
