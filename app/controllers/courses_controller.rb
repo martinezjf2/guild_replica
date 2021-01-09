@@ -5,16 +5,10 @@ class CoursesController < ApplicationController
     def index
         @student = Student.find_by(id: params[:student_id])
         @courses = @student.courses
-        
-
-        
-        
     end
 
-    def new
-        
-        @course = current_student.courses.new
-        
+    def new       
+        @course = current_student.courses.new        
     end
 
     def create
