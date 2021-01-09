@@ -23,16 +23,15 @@ class CoursesController < ApplicationController
     end
 
     def show
-        @course = Course.find_by(id: params[:id])
+        @course = find_course
     end
 
     def edit
-        @course = Course.find_by(id: params[:id])
+        @course = find_course
     end
 
     def update
-        @course = Course.find_by(id: params[:id])
-        # binding.pry
+        @course = find_course
 
        if @course.update(course_params)
             redirect_to student_courses_path(@course.student_id), success: "Course Successfully Updated!"
@@ -43,7 +42,7 @@ class CoursesController < ApplicationController
     end
 
     def destroy
-        @course = Course.find_by(id: params[:id])
+        @course = find_course
         @course.destroy
         redirect_to student_courses_path(@course.student_id), success: "Course Successfully Deleted!"
             

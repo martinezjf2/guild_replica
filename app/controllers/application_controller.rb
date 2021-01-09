@@ -21,4 +21,8 @@ class ApplicationController < ActionController::Base
         end
       end
 
+    def find_course
+        Course.find_by(id: params[:id])
+    end
+
 end
