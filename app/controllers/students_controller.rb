@@ -18,9 +18,9 @@ class StudentsController < ApplicationController
         @student = Student.new(student_params)
         if @student.save
             session[:student_id] = @student.id
-            redirect_to student_path(@student), notice: "User Successfully Created!"
+            redirect_to student_path(@student), success: "User Successfully Created!"
         else
-            redirect_to '/signup', alert: "Missing Fields, Please Try Again."
+            redirect_to '/signup', danger: "Missing Fields, Please Try Again."
         end
     end
 
@@ -32,10 +32,10 @@ class StudentsController < ApplicationController
         @student = Student.find_by(id: params[:id])
         @student.update(student_params)
         if @student.save
-            redirect_to student_path(@student), notice: "Successfully Updated!"
+            redirect_to student_path(@student), success: "Successfully Updated!"
             # flash[:notice] = "Successfully Updated"
         else
-            redirect_to "/students/#{@student.id}/edit", alert: "Missing Fields, Please Try Again!"
+            redirect_to "/students/#{@student.id}/edit", danger: "Missing Fields, Please Try Again!"
         end
 
     end
@@ -47,7 +47,7 @@ class StudentsController < ApplicationController
         @student.destroy
         # binding.pry
         session.clear
-        redirect_to "/", notice: "Your account was Deleted Successfully!"
+        redirect_to "/", success: "Your account was Deleted Successfully!"
     end
 
     private
