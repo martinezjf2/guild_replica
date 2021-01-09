@@ -37,7 +37,7 @@ class CoursesController < ApplicationController
        if @course.update(course_params)
             redirect_to student_courses_path(@course.student_id), success: "Course Successfully Updated!"
         else
-            render :edit, danger: "Please fill out the Missing Fields."
+            redirect_to edit_student_course_path(@course.student_id, @course), danger: "Please fill out the Missing Fields."
         end
 
     end
@@ -45,7 +45,7 @@ class CoursesController < ApplicationController
     def destroy
         @course = Course.find_by(id: params[:id])
         @course.destroy
-        redirect_to student_courses_path(@course.student_id), notice: "Course Successfully Deleted!"
+        redirect_to student_courses_path(@course.student_id), success: "Course Successfully Deleted!"
             
     end
 

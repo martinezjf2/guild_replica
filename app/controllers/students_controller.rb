@@ -47,7 +47,7 @@ class StudentsController < ApplicationController
         @student.destroy
         # binding.pry
         session.clear
-        redirect_to "/", success: "Your account was Deleted Successfully!"
+        redirect_to "/", success: "Your Account was Deleted Successfully!"
     end
 
     private
