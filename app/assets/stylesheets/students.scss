@@ -414,13 +414,18 @@ input:hover {
 }
 
 .dropdown-item:active {
-    color: #fff;
     text-decoration: underline
 }
 
 .dropdown-item {
     justify-content: left;
 }
+
+a.dropdownLink:active {
+    background-color: #f8f8f891;
+
+}
+
 
 //Proven Results Section
 
