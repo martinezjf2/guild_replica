@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
     end
 
     def show
-        @student = Student.find_by(id: params[:id])
+        @student = find_student
     end
 
 
@@ -25,11 +25,11 @@ class StudentsController < ApplicationController
     end
 
     def edit
-        @student = Student.find_by(id: params[:id])
+        @student = find_student
     end
 
     def update
-        @student = Student.find_by(id: params[:id])
+        @student = find_student
         @student.update(student_params)
         if @student.save
             redirect_to student_path(@student), success: "Successfully Updated!"
