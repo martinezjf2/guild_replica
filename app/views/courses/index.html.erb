@@ -14,8 +14,7 @@
         <%= render "layouts/studentHeader"%>
 
 
-
-    <% if @courses %> 
+    <% if !@courses.empty? %>   
         <div class="row courses justify-content-center">
             <% @courses.each do |course| %>
                 <div class="displayCourses">           
