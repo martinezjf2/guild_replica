@@ -71,7 +71,9 @@ p {
     
 }
 
-
+.jumbotron {
+    margin-bottom: 0px;
+}
 
 
 .subtitleHome {
@@ -465,6 +467,7 @@ a.dropdownLink:active {
     font-size: 20px;
 }
 
+// Company Logos
 .logos {
     background-color: #063347;
     padding: 25px 6px;
@@ -485,4 +488,5 @@ a.dropdownLink:active {
 .logo {
     padding: 3px 25px
 }
+
 

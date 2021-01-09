@@ -59,6 +59,10 @@
         margin: 0px 15px;
         align-items: center;
     }
+
+    .logos {
+        display:  none;
+    }
 }
 
 @media (min-width: 989px) {
@@ -110,6 +114,28 @@
         margin-right: 60px;
     }
     
+}
+
+@media (max-width: 1330px) {
+    .companiess {
+        margin:2px 20px;
+        
+    }
+
+    .logo {
+        padding: 3px 15px
+    }
+}
+
+@media (max-width: 1050px) {
+    .companiess {
+        margin:2px 5px;
+        
+    }
+
+    .logo {
+        padding: 3px 10px
+    }
 }
 
 
