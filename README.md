@@ -29,7 +29,7 @@ To contribute to The Guild Education Replica, follow these steps:
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin The Guild Education Replica/<location>`
+4. Push to the original branch: `git push origin <project_name>/<location>`
 5. Create the pull request.
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
@@ -42,4 +42,4 @@ If you want to contact me you can reach me at <martinezjf2@gmail.com>.
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [<MIT License>](<LICENSE.txt>).
+This project uses the following license: [MIT License](LICENSE.txt).
