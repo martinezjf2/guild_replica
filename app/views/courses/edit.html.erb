@@ -23,7 +23,7 @@
                                 </div>
                             <%= f.submit "Save Course", :class => 'btn btn-lg btn-default saveCourse' %>
                             
-                            <%= link_to "Delete Course", student_course_path(@course.student_id, @course), method: :delete, data: { confirm: "Really?" }, class: 'btn btn-lg btn-default saveCourse' %>
+                            <%= link_to "Delete Course", student_course_path(@course.student_id, @course), method: :delete, data: { confirm: "Are you sure you want to delete this course?" }, class: 'btn btn-lg btn-default saveCourse' %>
 
                         <% end %>
                     </div>
