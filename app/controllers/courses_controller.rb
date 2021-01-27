@@ -4,8 +4,11 @@ class CoursesController < ApplicationController
     
     def index
         @student = Student.find_by(id: params[:student_id])
+        # binding.pry
         if params[:search]
-            @courses = @student.courses.search(params[:search])
+            # binding.pry
+            @courses = @student.courses.search(params[:search].capitalize)
+            # binding.pry
         else
             @courses = @student.courses
         end
