@@ -14,13 +14,11 @@
 
 
 <div class="search">
-<%= form_tag("/students/#{current_student.id}/courses", method: :get) do %>
+<%= form_tag("/students/#{current_student.id}/courses", method: :get, class:"class2") do %>
 <div class="search-bar">
-
 <%= text_field_tag :search, params[:search], placeholder: "Search A Course", autocomplete: "off", id:"myInput"%>
 <%= submit_tag 'Search', class: "btn btn-default searchButton"%>
 </div>
-
 <% end %>
 </div>
 

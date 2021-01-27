@@ -4,7 +4,11 @@ class CoursesController < ApplicationController
     
     def index
         @student = Student.find_by(id: params[:student_id])
-        @courses = @student.courses
+        if params[:search]
+            @courses = @student.courses.search(params[:search])
+        else
+            @courses = @student.courses
+        end
     end
 
     def new       
