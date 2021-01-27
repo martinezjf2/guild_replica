@@ -103,3 +103,40 @@ textarea.form-control {
 .year {
     padding: 8px 10px 20px
 }
+
+// Search Bar
+
+.search {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.searchButton {
+    visibility: hidden;
+    
+}
+
+#myInput {
+    // background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 19px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.search-bar {
+    position: relative;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 400px;
+    height: 45px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    // overflow: hidden;
+}
