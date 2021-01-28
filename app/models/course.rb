@@ -5,6 +5,10 @@ class Course < ApplicationRecord
     validates :year_taken, presence: {message: "can't be empyty"}
     validates :name, presence: {message: "can't be empty"}
     
+
+    scope :alphabetize, -> {order(title: :asc)}
+
+
     def make_average_grade
     end
 
