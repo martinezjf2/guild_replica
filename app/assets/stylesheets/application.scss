@@ -63,6 +63,50 @@
     .logos {
         display:  none;
     }
+
+    .valueImg {
+        display:  none;
+    }
+    
+    .mainDiv {
+        margin: 0px 30px;
+        padding: 75px 50px;
+    }
+
+    .cVHeading {
+        padding: 0px 50px 50px;
+        text-align: center;
+    }
+    
+
+    .media-body {
+        padding: 0px 50px;
+    }
+}
+
+@media (max-width: 889px) {
+        
+    .cVHeading {
+        padding-bottom:30px;
+        
+    }
+   
+    .mainDiv {
+        margin: 0px;
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+        
+    .cVHeading {
+        padding-bottom: 15px;
+    }
+    
+
+    .media-body {
+        padding: 0px;
+    }
 }
 
 @media (min-width: 989px) {
