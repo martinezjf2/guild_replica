@@ -496,6 +496,19 @@ a.dropdownLink:active {
     padding: 32px 50px;
 }
 
+.cont {
+    display: flex;
+    justify-content: center;
+    // align-items: left;
+}
 
+.valueImg {
+    max-width: 100%;
+    
+}
+
+.img-col {
+    flex-basis: 40%
+}
 
 
