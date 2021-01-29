@@ -493,24 +493,25 @@ a.dropdownLink:active {
 
 .mainDiv {
     margin: 0px 100px;
-    padding: 32px 50px;
+    padding: 75px 50px;
+    justify-content: center;
 }
 
-.cont {
-    display: flex;
-    justify-content: center;
-    // align-items: left;
-}
 
 .valueImg {
     max-width: 100%;
-    margin-top: 125px;
-    margin-left: 75px;
+    height: auto;
+   
     
 }
 
-.img-col {
-    flex-basis: 40%
+.cVHeading {
+    padding: 0px 150px 20px 0px;
 }
+.cVInfo {
+    padding: 0px 150px 5px 35px;
+
+}
+
 
 
