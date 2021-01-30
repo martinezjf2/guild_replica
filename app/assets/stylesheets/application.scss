@@ -105,6 +105,11 @@
     .media-body {
         padding: 0px 50px;
     }
+
+    .provenRes {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
 }
 
 @media (max-width: 1205px) { 
@@ -114,6 +119,11 @@
 .valueImg {
     width: 300px;
     margin-top: 75%;
+}
+
+.provenRes {
+    margin-left: 60px;
+    margin-right: 60px;
 }
     
 }
