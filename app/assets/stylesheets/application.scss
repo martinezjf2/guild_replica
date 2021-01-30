@@ -84,6 +84,43 @@
     }
 }
 
+@media (max-width: 1652px) {
+    .mainDiv {
+        padding: 75px 50px;
+        justify-content: center;
+    }
+    
+    .media-body {
+        padding: 0px 50px;
+    }
+}
+
+@media (max-width: 1480px) { 
+    .mainDiv {
+        padding: 75px 0px;
+        margin: 0px 100px;
+        justify-content: center;
+    }
+    
+    .media-body {
+        padding: 0px 50px;
+    }
+}
+
+@media (max-width: 1205px) { 
+    .media-body {
+   padding: 0px 30px;
+}
+.valueImg {
+    width: 300px;
+    margin-top: 75%;
+}
+    
+}
+
+
+
+
 @media (max-width: 889px) {
         
     .cVHeading {
