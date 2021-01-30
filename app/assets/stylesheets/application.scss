@@ -116,6 +116,14 @@
         margin-left: 200px
     }
 
+    div.nav {
+        margin-left: 100px;
+    }
+    
+    .nav2 {
+        margin-right: 100px;
+    }
+
     
 }
 
@@ -142,6 +150,9 @@
     margin-left: 100px
 }
 
+div.nav {
+    margin-left: 100px;
+}
 
     
 }
@@ -207,6 +218,13 @@
 @media (max-width: 995px) {
     .homeHeading {
         margin-right: 80px;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    div.nav {
+        margin-left: 5px;
     }
 }
 
