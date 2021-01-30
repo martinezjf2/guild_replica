@@ -124,6 +124,10 @@
         margin-right: 100px;
     }
 
+    .entireHeading{
+        margin: 0px 10px
+    }
+
     
 }
 
@@ -171,6 +175,10 @@ div.nav {
         margin: 0px;
         padding: 50px 0px;
     }
+
+    .compTest {
+        margin: 0px 50px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -182,6 +190,10 @@ div.nav {
 
     .media-body {
         padding: 0px;
+    }
+
+    .compTest {
+        margin: 0px 5px;
     }
 }
 
@@ -232,7 +244,7 @@ div.nav {
 @media (max-width:750px) {
     .topHeading {
         padding: 0px 15px;
-        // text-align: center;
+    
     }
     
     .subtitleHome {
