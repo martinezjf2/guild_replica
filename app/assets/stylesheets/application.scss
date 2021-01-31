@@ -20,7 +20,7 @@
         margin-left: 5px;
     }
     
-    .nav2 {
+    div.nav2 {
         margin-right: 5px;
     }
 
@@ -40,9 +40,8 @@
         margin: 5px;
     }
 
-    .cardsShow {
-        margin-left: 5px;
-        margin-right: 5px;
+    div.cardsShow {
+        margin: 0px;
     }
 
     .changeBetter {
@@ -130,6 +129,10 @@
     }
 
     .showHeading {
+        margin: 0px 100px;
+    }
+
+    .cardsShow {
         margin: 0px 100px;
     }
     
