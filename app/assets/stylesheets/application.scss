@@ -35,9 +35,9 @@
         margin-right: 5px;
     }
 
-    .showHeading {
-        margin-left: 5px;
-        margin-right: 5px;
+    
+    div.showHeading {
+        margin: 5px;
     }
 
     .cardsShow {
@@ -82,6 +82,7 @@
     .media-body {
         padding: 0px 50px;
     }
+
 }
 
 @media (max-width: 1652px) {
@@ -128,6 +129,9 @@
         margin: 0px 10px
     }
 
+    .showHeading {
+        margin: 0px 100px;
+    }
     
 }
 
