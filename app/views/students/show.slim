@@ -1,0 +1,30 @@
+doctype html
+html lang="en" 
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="UTF-8" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title Education as a Benefit - Guild Education
+  body.showLogIn
+    = render "layouts/navbar"
+    = render "layouts/flash"
+    = render "layouts/studentHeader"
+    .row.cardsShow
+      .col-md-6.col-sm-12
+        .card.w-100
+          .card-body
+            h3.card-title Take the Next Step
+            h6.card-subtitle.mb-2.text-muted Talk to an Advisor!
+            p.card-text Guild helps students successfully enroll in academic programs that are changing their future. Join our growing number of students and graduates!
+      .col-md-6.col-sm-12
+        .card.w-100
+          .card-body
+            h3.card-title Programs and Courses
+            h6.card-subtitle.mb-2.text-muted Check it out!
+            p.card-text
+              a href="/students/#{@student.id}/courses"  View
+              | or
+              a href="/students/#{@student.id}/courses/new"  Add
+              | Courses to your yearly planner!
+    = render "layouts/changeForBetter"
+    = render "layouts/footer"

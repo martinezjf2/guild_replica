@@ -1,0 +1,33 @@
+doctype html
+html lang="en" 
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="UTF-8" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title Education as a Benefit - Guild Education
+  body
+    = render "layouts/navbar"
+    section.text-center.signInForm
+      .container
+        a.guildSignIn href="/students/#{@student.id}" = image_tag("students/guild_logo.jpeg", width: '175px')
+        h3.welcomeBack Edit Your Profile
+        = render "layouts/flash"
+        .inputBox
+          = form_for @student do |f|
+            = f.text_field :first_name, :placeholder => "Enter First Name", class: "form-control signUpInput "
+            br/
+            br/
+            = f.text_field :last_name, :placeholder => "Enter Last Name", class: "form-control signUpInput "
+            br/
+            br/
+            = f.text_field :email, :placeholder => "Enter Email", class: "form-control signUpInput "
+            br/
+            br/
+            = f.text_field :username, :placeholder => "Enter Username", class: "form-control signUpInput "
+            br/
+            br/
+            = f.password_field :password, :placeholder => "Enter New Password", class: "form-control signUpInput "
+            br/
+            br/
+            = f.button "Save Profile", class: "btn btn-lg btn-default loginButton"
+            = link_to "Delete Account", root_path, method: :delete, data: { confirm: "Are you sure you want take this action?" }, class: 'btn btn-lg btn-default saveCourse'
