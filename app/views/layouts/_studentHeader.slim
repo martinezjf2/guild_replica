@@ -1,0 +1,7 @@
+section#headingShow
+  .jumbotron.studentsShowHeading
+    .showHeading
+      .row.editProfile
+        h1.col-lg-6.col-sm-12.studentsShowTitle
+          | Good Afternoon, #{current_student.first_name}!
+        = link_to 'Edit Profile', edit_student_path(current_student.id), class: "btn editProfileButton"
