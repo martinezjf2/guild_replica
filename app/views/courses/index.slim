@@ -1,0 +1,31 @@
+doctype html
+html lang="en" 
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="UTF-8" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title Education as a Benefit - Guild Education
+  body
+    = render "layouts/navbar"
+    = render "layouts/flash"
+    = render "layouts/studentHeader"
+
+    - if !@courses.empty?
+    .search
+      = form_tag("/students/#{current_student.id}/courses", method: :get, class:"class2") do
+        .search-bar
+          = text_field_tag :search, params[:search], placeholder: "Search A Course", autocomplete: "off", id:"myInput"
+          = submit_tag 'Search', class: "btn btn-default searchButton"
+
+    - if !@courses.empty?
+      .row.courses.justify-content-center
+        - @courses.each do |course|
+          .displayCourses
+            .col-lg-4.col-md-6.col-sm-12
+              .card.indCard
+                .card-body.text-center
+                  h4.card-title= course.name
+                  p.card-text= course.year_taken
+                  = link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton"
+    = render "layouts/addACourse"
+    = render "layouts/footer"

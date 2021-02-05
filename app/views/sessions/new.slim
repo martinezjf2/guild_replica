@@ -1,0 +1,18 @@
+doctype html
+html lang="en" 
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="UTF-8" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title Education as a Benefit - Guild Education
+  body.text-center
+    .section
+      a.guildSignIn href="/" = image_tag("students/guild_logo.jpeg", width: '175px')
+      .container-fluid.newCourseForm
+        h3.welcomeBack Welcome Back!
+        = render "layouts/flash"
+        = form_for :student, url: login_path do |f|
+          .textInputs
+            = f.text_field :username, class: "form-control Input", :placeholder => 'Enter Username'
+            = f.password_field :password, class: "form-control Input", :placeholder => 'Enter Password'
+          = f.submit "LOG IN", class: "btn btn-lg btn-default loginButton"
