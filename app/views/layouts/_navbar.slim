@@ -1,0 +1,26 @@
+- if !current_student
+  nav.navbar.navbar-expand-lg.navbar-light
+    .nav
+      a.navbar-brand.guildLogo href="/" = image_tag("students/guild_logo.jpeg", width: '100px')
+    button.navbar-toggler aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarTogglerDemo02" data-toggle="collapse" type="button" 
+      span.navbar-toggler-icon
+    #navbarTogglerDemo02.collapse.navbar-collapse.justify-content-end
+      .nav2
+        ul.navbar-nav.navLinksLogSign
+          li.nav-item
+            = link_to 'Student Login', login_path, class: "nav-link btn"
+          li.nav-item
+            = link_to 'Student Signup', signup_path, class: "nav-link btn"
+- else
+  nav.navbar
+    .nav
+      a.navbar-brand.guildLogo href="/students/#{current_student.id}" = image_tag("students/guild_logo.jpeg", width: '100px')
+    .nav2
+      .dropdown.nav-item
+        button#dropdownMenuButton.btn.btn-default.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+          | Hi, #{current_student.first_name}
+        .dropdown-menu.dropdown-menu-right aria-labelledby="dropdownMenuButton" 
+          = link_to "View Courses", student_courses_path(current_student), class: "dropdown-item dropdownLink"
+          = link_to "Add Course", new_student_course_path(current_student), class: "dropdown-item dropdownLink"
+          = link_to "Edit Profile", edit_student_path(current_student), class: "dropdown-item dropdownLink"
+          = link_to "Log Out", logout_path, method: :delete, data: {confirm: "Really?" }, class: "dropdown-item dropdownLink"

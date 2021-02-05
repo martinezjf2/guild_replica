@@ -1,0 +1,11 @@
+- if flash.any?
+  - flash.each do |type, msg|
+    .text-center
+      |  <div class="alert alert-
+      = type
+      |  alert-dismissible fade show" role="alert"> 
+      strong
+        = msg
+      button.close[type="button" data-dismiss="alert" aria-label="Close"]
+        span[aria-hidden="true"]
+          | ×
