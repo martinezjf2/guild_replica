@@ -13,6 +13,7 @@ class Student < ApplicationRecord
     validates :email, presence: {message: "can't be empty"}, uniqueness: true
     validates :username, presence: {message: "can't be empty"}, uniqueness: true
 
+    has_one_attached :image
 
     def is_first_name_uppercase?
         if first_name.split.any?{ |letter| letter[0].upcase != letter[0]}

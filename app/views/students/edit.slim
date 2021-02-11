@@ -9,11 +9,23 @@ html lang="en"
     = render "layouts/navbar"
     section.text-center.signInForm
       .container
+
         a.guildSignIn href="/students/#{@student.id}" = image_tag("students/guild_logo.jpeg", width: '175px')
         h3.welcomeBack Edit Your Profile
+        - if @student.image_attachment == nil
+            = image_tag("students/profileExample.jpeg", width: '100px', class: "rounded-circle") 
+        - else
+            = image_tag(current_student.image, width: '100px', class: "rounded-circle")
+        
         = render "layouts/flash"
+
+        
         .inputBox
+        
           = form_for @student do |f|
+            = f.file_field :image
+            br/
+            br/            
             = f.text_field :first_name, :placeholder => "Enter First Name", class: "form-control signUpInput "
             br/
             br/

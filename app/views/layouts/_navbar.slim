@@ -18,9 +18,16 @@
     .nav2
       .dropdown.nav-item
         button#dropdownMenuButton.btn.btn-default.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
-          | Hi, #{current_student.first_name}
+          | Hi, #{current_student.first_name}    
+          - if current_student.image_attachment == nil
+            = image_tag("students/profileExample.jpeg", width: '40px', class: "rounded-circle topPic") 
+          - else
+            = image_tag(current_student.image, width: '40px', class: "rounded-circle topPic")
         .dropdown-menu.dropdown-menu-right aria-labelledby="dropdownMenuButton" 
           = link_to "View Courses", student_courses_path(current_student), class: "dropdown-item dropdownLink"
           = link_to "Add Course", new_student_course_path(current_student), class: "dropdown-item dropdownLink"
           = link_to "Edit Profile", edit_student_path(current_student), class: "dropdown-item dropdownLink"
           = link_to "Log Out", logout_path, method: :delete, data: {confirm: "Really?" }, class: "dropdown-item dropdownLink"
+
+          
+      

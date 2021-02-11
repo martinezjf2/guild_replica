@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/mdeering/gravatar_image_tag.git
+  revision: c02351f7d6649e2346394e33164a7154e671ec19
+  specs:
+    gravatar_image_tag (1.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,6 +193,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   byebug
+  gravatar_image_tag!
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)

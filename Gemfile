@@ -24,6 +24,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Install Slim. Read More: https://rdoc.info/gems/slim/frames
 gem 'slim'
 
+gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
