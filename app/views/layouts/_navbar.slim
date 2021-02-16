@@ -27,7 +27,7 @@
           = link_to "View Courses", student_courses_path(current_student), class: "dropdown-item dropdownLink"
           = link_to "Add Course", new_student_course_path(current_student), class: "dropdown-item dropdownLink"
           = link_to "Edit Profile", edit_student_path(current_student), class: "dropdown-item dropdownLink"
-          = link_to "Log Out", logout_path, method: :delete, data: {confirm: "Really?" }, class: "dropdown-item dropdownLink"
+          = link_to "Log Out", logout_path, method: :delete, data: {confirm: "Are you sure you want to logout?" }, class: "dropdown-item dropdownLink"
 
           
       
