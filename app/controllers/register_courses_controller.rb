@@ -6,7 +6,7 @@ class RegisterCoursesController < ApplicationController
     end
 
     def show
-        
+        @course = RegisterCourse.find_by(id: params[:id])       
     end
 
     def create

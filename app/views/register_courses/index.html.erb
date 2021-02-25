@@ -27,7 +27,7 @@
                     <div class="card-body text-center">
                         <h4 class="card-title"><%= course.name %></h4>
                         <p class="card-text"><%= course.start %> - <%= course.end %></p>
-                        <%= link_to 'View More', student_register_courses_path(current_student.id), class: "btn btn-default loginButton" %>                  
+                        <%= link_to 'View More', register_course_path(course.id), class: "btn btn-default loginButton" %>                  
                     </div>
                 </div>
             </div>
