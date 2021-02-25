@@ -17,13 +17,15 @@ class CoursesController < ApplicationController
 
     def create
         @course = current_student.courses.new(course_params)
-        
-        if @course.save
-            
+        if @course.save   
             redirect_to student_course_path(@course.student_id, @course), success: "Course Successfully Added!"
         else
             render :new, danger: "Not Saved, Please fill out the requirements!"
         end
+    end
+
+    def register
+
     end
 
     def show
