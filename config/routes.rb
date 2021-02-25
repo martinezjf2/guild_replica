@@ -22,7 +22,7 @@ delete '/', to: 'students#destroy'
 post '/students/:id/courses/new', to: 'courses#create'
 # post '/students/:id/courses/register', to: 'courses#register'
 
-get '/students/:id/courses/register', to: 'courses#register'
-post '/students/:id/courses/register', to: 'courses#register'
+get '/students/courses/register', to: 'courses#register'
+post '/students/courses/register', to: 'courses#register'
 
 end
