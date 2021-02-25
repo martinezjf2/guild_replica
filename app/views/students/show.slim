@@ -24,7 +24,9 @@ html lang="en"
             p.card-text
               a href="/students/#{@student.id}/courses"  View 
               | or
-              a href="/students/#{@student.id}/courses/new"  Add 
-              | Courses to your yearly planner!
+              a href="/students/#{@student.id}/courses/new"  Add  
+              | a previous course to capture your experience! Would you like to 
+              a href="/students/#{@student.id}/courses/new"  Register 
+              | for a course? 
     = render "layouts/changeForBetter"
     = render "layouts/footer"
