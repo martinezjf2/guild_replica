@@ -24,9 +24,7 @@ class CoursesController < ApplicationController
         end
     end
 
-    def register
-
-    end
+   
 
     def show
         @course = find_course

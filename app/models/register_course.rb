@@ -1,0 +1,2 @@
+class RegisterCourse < ApplicationRecord
+end
