@@ -3,16 +3,16 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   movies = Movie.create([{ start: "03/15/2021", end: "06/05/2021", description:"", name: 'Star Wars' }, { start: "03/15/2021", end: "06/05/2021", description:"", name: 'Lord of the Rings' }])
+#   Character.create(start: "03/15/2021", end: "06/05/2021", description:"", name: 'Luke', movie: movies.first)
 
-course_1 = RegisterCourse.create([{}])
-course_2 = RegisterCourse.create([{}])
-course_3 = RegisterCourse.create([{}])
-course_4 = RegisterCourse.create([{}])
-course_5 = RegisterCourse.create([{}])
-course_6 = RegisterCourse.create([{}])
-course_7 = RegisterCourse.create([{}])
-course_8 = RegisterCourse.create([{}])
-course_9 = RegisterCourse.create([{}])
-course_10 = RegisterCourse.create([{}])
+course_1 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"Learn about the study of living organisms, divided into many specialized fields that cover their morphology, physiology, anatomy, behavior, origin, and distribution.", name: "Biology"}])
+course_2 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"Learn about the study of the practices and possibilities of music. Music theory is frequently concerned with describing how musicians and composers make music, including tuning systems and composition methods among other topics.", name: "Music Theory"}])
+course_3 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"Learn about the branch of science that deals with the identification of the substances of which matter is composed; the investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes to form new substances.", name: "Chemistry"}])
+course_4 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"Learn about the part of mathematics in which letters and other general symbols are used to represent numbers and quantities in formulae and equations.", name: "Algebra"}])
+course_5 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"Learn about the natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force.", name: "Physics"}])
+course_6 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"Learn about the study of texts from around the world, written in the English language, such as screenplays, nonfiction, song lyrics, and online communication through blogs and other means", name: "English"}])
+course_7 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"This course covers the concepts of programming using JavaScript, and introduces JQuery. It focuses on the JavaScript programming language syntax, software design, coding, documenting, and debugging programs. Topics include Data Types, Reference Types, Operators, Objects, JavaScript Events, and Functions.  Projects will use HTML, CSS, and JavaScript to create dynamic web pages.  GitHub is used to host coding projects.", name: "Introduction to JavaScript"}])
+course_8 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"This course examines the major developments in America from the founding of the early colonies through the Reconstruction Era. Primary focus is placed on those concepts that have shaped the nation such as Constitutionalism, slavery, individualism, and Covenant among others.", name: "American History to 1877"}])
+course_9 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"This course presents the development of psychology in the history of the Western world. Among the topics it includes are the philosophical basis of modern psychology, the founders of psychology, and development of major theories and content areas.", name: "History of Phychology"}])
+course_10 = RegisterCourse.create([{start: "03/15/2021", end: "06/05/2021", description:"The course will focus on organizational dynamics including motivation, leadership, cultural aspects, ethics and other related topics. The course is designed to encourage and demonstrate the application of the pillars of capitalism in diverse conceptual and theoretical perspectives to organizational management and behavior.", name: "Business Management and Organizations"}])
