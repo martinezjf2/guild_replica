@@ -6,15 +6,18 @@ class RegisterCoursesController < ApplicationController
     end
 
     def show
-        @course = RegisterCourse.find_by(id: params[:id])       
+        @register_course = RegisterCourse.find_by(id: params[:id])       
     end
 
-    def new  
+    def new     
         @register_course = current_student.register_courses.new  
     end
 
     def create
+        binding.pry
+        # @course = RegisterCourse.find_by(id: params[:id])       
         @register_course = current_student.register_courses.new(register_courses_params)
+        binding.pry
         # if @course.save   
         #     redirect_to student_course_path(@course.student_id, @course), success: "Course Successfully Added!"
         # else
@@ -32,6 +35,6 @@ class RegisterCoursesController < ApplicationController
 
     def register_courses_params
         binding.pry
-        params.require(:register_courses).permit(:name, :end, :start, :description)
+        params.require(:register_courses).permit(:name, :end, :start, :description, :id)
     end
 end
