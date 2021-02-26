@@ -5,8 +5,7 @@ class CreateRegisterCourses < ActiveRecord::Migration[6.0]
       t.string :start
       t.string :end
       t.string :description
-      
-
+      t.integer :student_id
       t.timestamps
     end
   end

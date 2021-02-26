@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Education as a Benefit - Guild Education</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     </head>
     <body>
     
@@ -17,7 +19,13 @@
       <h3 class="card-title"><%=@course.name%></h3>
       <h6 class="card-subtitle mb-2 text-muted"><%=@course.start%> - <%=@course.end%></h6>
       <p class="card-text"><%=@course.description%></p>
-      <a href="#" class="btn btn-md btn-default loginButton">Register?</a>
+
+
+        
+        <button type="submit" id="registerCourse" class="btn btn-md btn-default loginButton" >Register?</button>
+        
+
+
     </div>
   </div>
 </div>
@@ -27,5 +35,7 @@
 
             
         <%= render "layouts/footer"%>
+
+        
     </body>
 </html>

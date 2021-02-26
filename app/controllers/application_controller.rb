@@ -15,6 +15,12 @@ class ApplicationController < ActionController::Base
         end
     end
 
+    def redirect_homepage
+        if current_student
+            redirect_to student_path(current_student.id)
+        end
+    end
+
     def redirect_to_login
         if current_student
           redirect_to '/login'
