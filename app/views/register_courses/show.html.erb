@@ -20,10 +20,9 @@
       <h6 class="card-subtitle mb-2 text-muted"><%=@course.start%> - <%=@course.end%></h6>
       <p class="card-text"><%=@course.description%></p>
 
-
         
-        <button type="submit" id="registerCourse" class="btn btn-md btn-default loginButton" >Register?</button>
-        
+         <%= button_to "Register", student_register_courses_path(@course.id), :method => :post, :class => "btn btn-md btn-default loginButton", remote: true, form: { "data-type" => "json" } %>
+        <!-- post to the correct controller and then i can redirect it to a different path -->
 
 
     </div>
