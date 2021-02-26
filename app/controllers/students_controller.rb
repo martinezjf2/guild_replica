@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
     before_action :require_login, only: [:show, :edit, :update]
 
     def home
-
+        redirect_to student_path(current_student.id)
     end
 
     def show
