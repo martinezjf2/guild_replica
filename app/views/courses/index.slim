@@ -18,6 +18,7 @@ html lang="en"
           = submit_tag 'Search', class: "btn btn-default searchButton"
 
     - if !@courses.empty?
+      h4.text-center View my Previous Courses
       .row.courses.justify-content-center
         - @courses.each do |course|
           .displayCourses
