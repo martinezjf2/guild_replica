@@ -10,12 +10,11 @@ class RegisterCoursesController < ApplicationController
     end
 
     def new     
-        @register_course = current_student.register_courses.new(register_courses_params)  
+        @register_course = current_student.register_courses.new
     end
 
     def create
-        binding.pry
-        # @course = RegisterCourse.find_by(id: params[:id])       
+        binding.pry     
         @register_course = current_student.register_courses.new(register_courses_params)
         binding.pry
         # if @course.save   
@@ -35,6 +34,6 @@ class RegisterCoursesController < ApplicationController
 
     def register_courses_params
         binding.pry
-        params.require(:register_course).permit(:name, :end, :start, :description, :student_id)
+        params.permit(:name, :end, :start, :description, :student_id)
     end
 end
