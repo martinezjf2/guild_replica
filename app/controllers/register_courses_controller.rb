@@ -35,6 +35,6 @@ class RegisterCoursesController < ApplicationController
 
     def register_courses_params
         binding.pry
-        params.require(:register_courses).permit(:name, :end, :start, :description, :id)
+        params.require(:register_courses).permit(:name, :end, :start, :description)
     end
 end
