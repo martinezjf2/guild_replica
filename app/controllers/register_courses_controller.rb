@@ -10,7 +10,7 @@ class RegisterCoursesController < ApplicationController
     end
 
     def new     
-        @register_course = current_student.register_courses.new  
+        @register_course = current_student.register_courses.new(register_courses_params)  
     end
 
     def create
@@ -35,6 +35,6 @@ class RegisterCoursesController < ApplicationController
 
     def register_courses_params
         binding.pry
-        params.require(:register_courses).permit(:name, :end, :start, :description)
+        params.require(:register_course).permit(:name, :end, :start, :description, :student_id)
     end
 end
