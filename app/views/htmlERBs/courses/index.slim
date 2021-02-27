@@ -28,5 +28,17 @@ html lang="en"
                   h4.card-title= course.name
                   p.card-text= course.year_taken
                   = link_to 'View More', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton"
+
+    - if !@register_courses.empty?
+      h4.text-center View Registered Courses
+      .row.courses.justify-content-center
+        - @register_courses.each do |registered_course|
+          .displayCourses
+            .col-lg-4.col-md-6.col-sm-12
+              .card.indCard
+                .card-body.text-center
+                  h4.card-title= registered_course.name
+                  p.card-text= registered_course.end - registered_course.start  
+                  p.card-text= registered_course.description
     = render "layouts/addACourse"
     = render "layouts/footer"

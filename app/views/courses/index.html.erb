@@ -25,7 +25,8 @@
 
 
 
-    <% if !@courses.empty? %>   
+    <% if !@courses.empty? %>
+    <h4 class="text-center">View my Previous Courses</h4>   
         <div class="row courses justify-content-center">
             <% @courses.each do |course| %>
                 <div class="displayCourses">           
@@ -42,6 +43,27 @@
             <% end %>
         </div>
     <% end %>
+
+    <% if !@register_courses.empty? %>
+    <h4 class="text-center">View my Registered Courses</h4>   
+        <div class="row courses justify-content-center">
+            <% @register_courses.each do |register_course| %>
+                <div class="displayCourses">           
+                    <div class= "col-lg-4 col-md-6 col-sm-12">
+                        <div class="card indCard">
+                            <div class="card-body text-center">
+                                <h4 class="card-title"><%= register_course.name %></h4>
+                                <p class="card-text"><%= register_course.start %> - <%= register_course.end %></p>
+                                <p class="card-text"><%= register_course.description%></p>
+                                <% #=button_to 'Delete', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton" %>                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
+
 
 
         <%= render "layouts/addACourse"%>

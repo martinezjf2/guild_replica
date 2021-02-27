@@ -1,6 +1,8 @@
 class Student < ApplicationRecord
     has_many :courses, dependent: :delete_all
-    has_many :register_courses, dependent: :delete_all
+    has_many :student_registered_courses
+    has_many :register_courses, through: :student_registered_courses
+    
     has_secure_password
 
     validate :is_first_name_uppercase?

@@ -9,6 +9,8 @@ class CoursesController < ApplicationController
         else
             @courses = @student.courses
         end
+        # binding.pry
+        @register_courses = current_student.register_courses
     end
 
     def new       
