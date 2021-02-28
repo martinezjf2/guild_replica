@@ -2,10 +2,6 @@
 
 The Guild Education Replica is an application that allows students to do record and save their previous school course experience. A student can sign up and add courses they have taken within the past year, as far as their grade, and a description about the course, or what they learned about the course. A student can also register for available courses. Once registered, if they want to unregister, they can surely do so. The student can also personalize their profile by added a profile picture when editing their profile.
 
-## Author
-
-Jeffrey Martinez
-
 ## Opening the Application to Localhost
 
 To use The Guild Education Replica, follow these steps:
