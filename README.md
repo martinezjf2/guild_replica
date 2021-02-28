@@ -12,25 +12,20 @@ Jeffrey Martinez - Initial work
 
 To use The Guild Education Replica, follow these steps:
 
-Make sure you have installed the dependencies by running
+1. Make sure you have PostgreSQL installed. If you do not have it installed, [click here](https://www.robinwieruch.de/postgres-sql-macos-setup) for procedure on how to install. Make sure to start up the postgres server before starting your localhost server.
 
-`bundle install`
+To start up the postgres server, run this command on your command line: `pg_ctl -D /usr/local/var/postgres start`
+To stop the postgre server, run this command on your command line: `pg_ctl -D /usr/local/var/postgres stop`
 
-Make sure you have PostgreSQL installed. If you do not have it installed, [click here](https://www.robinwieruch.de/postgres-sql-macos-setup) for procedure on how to install. Make sure to start up the postgres server before starting your localhost server.
+2. Open up the project and on the root directory follow the steps below:
 
-To start up the postgres server, run this command on your command line:
+3. Make sure you have installed the ruby gems by running: `bundle install` on your terminal
 
-`pg_ctl -D /usr/local/var/postgres start`
+4. After starting your postgres server, run: `rails db:create` which will create the development files for your database. Then run: `rails db:migrate` which will the migrations to set up the tables. Lastly, run `rails:db seed` in order to generate data to register available courses.
 
-To stop the postgre server, run this command on your command line:
+5. To open the project on your localhost, run: `rails s` on your terminal, and go to your browser and type in localhost:3000. You should see the project opened up.
 
-`pg_ctl -D /usr/local/var/postgres stop`
-
-After starting your postgres server, run: `rails db:create` which will create the development files for your database. Then run: `rails db:migrate` which will the migrations to set up the tables. Lastly, run `rails:db seed` in order to generate data to register available courses.
-
-To open the project on your localhost, run: `rails s` on your terminal, and go to your browser and type in localhost:3000. You should see the project opened up.
-
-Lastly, sign up and enjoy your experience!
+6. Lastly, sign up and enjoy the experience!
 
 ## Contributing to The Guild Education Replica
 
