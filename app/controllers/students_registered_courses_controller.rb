@@ -1,5 +1,5 @@
 class StudentsRegisteredCoursesController < ApplicationController
-    # before_action :require_login
+    before_action :require_login
 
     def show
         # @course = RegisterCourse.find_by(id: params[:id])
@@ -11,7 +11,4 @@ class StudentsRegisteredCoursesController < ApplicationController
         @course.destroy
         redirect_to student_courses_path(current_student.id)
     end
-
-    
-
 end

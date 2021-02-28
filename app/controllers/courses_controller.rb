@@ -22,7 +22,7 @@ class CoursesController < ApplicationController
         if @course.save   
             redirect_to student_course_path(@course.student_id, @course), success: "Course Successfully Added!"
         else
-            render :new, danger: "Not Saved, Please fill out the requirements!"
+            redirect_to new_student_course_path(@course.student_id), danger: "Not Saved, Please fill out the requirements!"
         end
     end
 
