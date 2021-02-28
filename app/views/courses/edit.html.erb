@@ -12,6 +12,10 @@
             <div class="section">
                 <a href="/students/<%= current_student.id%>" class="guild" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
                     <div class="container-fluid newCourseForm">
+                        <ul class="createCourseRules">
+                            <li class="createCourseRule">Grade Must be 1 Letter</li>
+                            <li class="createCourseRule">Year Must be 4 Numbers</li>
+                        </ul>
                    
                         <%= form_for @course, :url => {:controller => "courses", :action => "update" } do |f| %>
                                 <div class="textInputs">
