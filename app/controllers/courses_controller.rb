@@ -6,11 +6,12 @@ class CoursesController < ApplicationController
         @student = Student.find_by(id: params[:student_id])
         if params[:search]
             @courses = @student.courses.search(params[:search].capitalize)
+            @register_courses = current_student.register_courses.search(params[:search].capitalize)
         else
             @courses = @student.courses
+            @register_courses = current_student.register_courses
         end
         # binding.pry
-        @register_courses = current_student.register_courses
     end
 
     def new       

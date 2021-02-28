@@ -12,8 +12,8 @@ class Course < ApplicationRecord
     def make_average_grade
     end
 
-    def self.search(search)
-        where('name LIKE ?', "%#{search}%")
-      end
+    # def self.search(search)
+    #     where('name LIKE ?', "%#{search}%")
+    # end
 
 end

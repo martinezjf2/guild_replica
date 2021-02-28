@@ -2,7 +2,11 @@ class RegisterCoursesController < ApplicationController
     before_action :require_login
 
     def index
-        @register_courses = RegisterCourse.all
+        if params[:search]
+            @register_courses = RegisterCourse.search(params[:search].capitalize)
+        else
+            @register_courses = RegisterCourse.all
+        end
     end
 
     def show
