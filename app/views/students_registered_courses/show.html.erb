@@ -26,8 +26,8 @@
       <%= hidden_field_tag @course%>
 
         
-         <%= button_to('Delete', student_students_registered_course_path(current_student.id, @course.id),
-         method: "delete", remote: true, data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+         <%= button_to('Unregister Course?', student_students_registered_course_path(current_student.id, @course.id),
+         method: "delete", remote: true, data: { confirm: 'Are you sure you want to unregister?', disable_with: 'loading...' }, class: "btn btn-default loginButton") %>
 
 
 
