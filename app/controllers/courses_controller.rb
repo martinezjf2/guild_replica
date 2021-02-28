@@ -49,9 +49,13 @@ class CoursesController < ApplicationController
 
     def destroy
         @course = find_course
+        # @register_course = current_student.register_courses.find_by(id: params[:id])
+        # if @course
         @course.destroy
-        redirect_to student_courses_path(@course.student_id), success: "Course Successfully Deleted!"
-            
+        # elsif @register_course
+        # @register_course.destroy
+        # end
+        redirect_to student_courses_path(@course.student_id), success: "Course Successfully Deleted!"           
     end
 
     private
@@ -65,3 +69,5 @@ class CoursesController < ApplicationController
     end
 
 end
+
+#take off the require(:course)

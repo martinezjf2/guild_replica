@@ -55,8 +55,7 @@
                             <div class="card-body text-center">
                                 <h4 class="card-title"><%= register_course.name %></h4>
                                 <p class="card-text"><%= register_course.start %> - <%= register_course.end %></p>
-                                <p class="card-text"><%= register_course.description%></p>
-                                <% #=button_to 'Delete', student_course_path(current_student.id, course.id), class: "btn btn-default loginButton" %>                  
+                                <%= link_to 'View More', student_students_registered_course_path(current_student.id, register_course.id), class: "btn btn-default loginButton" %>                                
                             </div>
                         </div>
                     </div>

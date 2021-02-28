@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education as a Benefit - Guild Education</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+    
+        <%= render "layouts/navbar"%>
+        <%= render "layouts/flash" %>
+        <%= render "layouts/studentHeader"%>
+<div class="registerInd">
+<div class="container-fluid">
+<div class="card w-100 cardHeight">
+    <div class="card-body">
+      <h3 class="card-title"><%=@course.name%></h3>
+      <h6 class="card-subtitle mb-2 text-muted"><%=@course.start%> - <%=@course.end%></h6>
+      
+      <p class="card-text"><%=@course.description%></p>
+
+     
+
+      <%= hidden_field_tag @course%>
+
+        
+         <%= button_to('Delete', student_students_registered_course_path(current_student.id, @course.id),
+         method: "delete", remote: true, data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+            
+        <%= render "layouts/footer"%>
+
+        
+    </body>
+</html>

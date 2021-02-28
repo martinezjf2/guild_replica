@@ -150,5 +150,23 @@ textarea.form-control {
 // Registered Course Section
 
 div.registeredCard {
-    height: 300px;
+    height: auto;
+}
+
+.registerButton {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 24px;
+    width: 272px;
+    background-color: #007d8c;
+    letter-spacing: 1.3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.registerButton:hover {
+    background-color: #037180;
+    text-decoration: underline;
+    color: #fff;
+
 }

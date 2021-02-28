@@ -19,8 +19,9 @@ class RegisterCoursesController < ApplicationController
         redirect_to student_courses_path(current_student.id)
     end
 
-    def destroy
-        
+    def delete
+        # @register_course = RegisterCourse.find_by(id: params[:id])
+        # @register_course.destroy       
     end
 
     private

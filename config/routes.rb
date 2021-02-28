@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :students do
     resources :courses 
       resource :register_courses
+  resources :students_registered_courses
+
     
   end
 
@@ -22,6 +24,7 @@ get '/logout', to: 'sessions#destroy'
 patch '/students/:id/courses', to: 'courses#update'
 delete '/logout', to: 'sessions#destroy'
 delete '/', to: 'students#destroy'
+# delete '/', to: 'courses#index'
 
 post '/students/:id/courses/new', to: 'courses#create'
 post '/register_courses/:id', to: 'register_courses#show'
