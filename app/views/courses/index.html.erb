@@ -55,7 +55,8 @@
                             <div class="card-body text-center">
                                 <h4 class="card-title"><%= register_course.name %></h4>
                                 <p class="card-text"><%= register_course.start %> - <%= register_course.end %></p>
-                                <%= link_to 'View More', student_students_registered_course_path(current_student.id, register_course.id), class: "btn btn-default loginButton" %>                                
+                                <%= link_to 'View More', student_students_registered_course_path(current_student.id, register_course.id), class: "btn btn-default loginButton" %>   
+                                <%= hidden_field_tag :register_course_id, register_course.id %>                             
                             </div>
                         </div>
                     </div>

@@ -23,17 +23,10 @@
 
      
 
-      <%= hidden_field_tag @register_course%>
+      <%= hidden_field_tag :register_course, @register_course%>
 
         
          <%= button_to "Register", student_register_courses_path(@register_course.id), :method => :post, :class => "btn btn-md btn-default loginButton", remote: true, form: { "data-type" => "json" }, :params => {register_course: @register_course} %>
-
-
-
-
-
-        <!-- post to the correct controller and then i can redirect it to a different path -->
-
 
     </div>
   </div>

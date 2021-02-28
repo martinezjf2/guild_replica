@@ -4,10 +4,12 @@ class StudentsRegisteredCoursesController < ApplicationController
     def show
         # @course = RegisterCourse.find_by(id: params[:id])
         @course = current_student.register_courses.find_by(id: params[:id])
+        binding.pry
         # invoke something here to pass the register_id as a param to the button, 
     end
 
     def destroy
+        binding.pry
         @course = current_student.register_courses.find_by(id: params[:id])
         @course.delete
         # @register_course.push(@course)
