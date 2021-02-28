@@ -4,15 +4,12 @@ class StudentsRegisteredCoursesController < ApplicationController
     def show
         # @course = RegisterCourse.find_by(id: params[:id])
         @course = current_student.register_courses.find_by(id: params[:id])
+        # invoke something here to pass the register_id as a param to the button, 
     end
 
     def destroy
-        # binding.pry
-        @register_courses = RegisterCourse.all
         @course = current_student.register_courses.find_by(id: params[:id])
-        # binding.pry
-        @course.destroy
-        # binding.pry
+        @course.delete
         # @register_course.push(@course)
         # @register_courses << RegisterCourse.new(name: @course.name, end: @course.end, start: @course.start, description: @course.description)
         # binding.pry
@@ -20,23 +17,17 @@ class StudentsRegisteredCoursesController < ApplicationController
     end
 
     # def destroy
-    #     binding.pry
     #     # @course = StudentRegisteredCourse.find_by(id: params[:id])
     #     @course = current_student.students_registered_courses.find_by(id: params[:id])
-    #     binding.pry
     #     @course.destroy
-    #     # binding.pry
     #     # @register_course.push(@course)
     #     # @register_courses << RegisterCourse.new(name: @course.name, end: @course.end, start: @course.start, description: @course.description)
-    #     # binding.pry
     #     redirect_to student_courses_path(current_student.id)
     # end
 
     private
 
-    # def register_course_params
-        
-    #     params.require(:register_course).permit(:name, :end, :start, :description)
-          
-    # end
+#     def register_course_params     
+#         params.permit(:register_course_id)     
+#     end
 end
