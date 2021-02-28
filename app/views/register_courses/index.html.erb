@@ -12,6 +12,8 @@
         <%= render "layouts/flash" %>
         <%= render "layouts/studentHeader"%>
 
+
+
         <div class="search">
             <%= form_tag("/register_courses", method: :get, class:"class2") do %>
                 <div class="search-bar">
@@ -22,30 +24,41 @@
         </div>
 
 
-<div class="registerGroupCourses">
-    <h3 class="text-center">Register for Courses</h3>
-</div>
+
     
     <!-- Add a search bar here -->
 
     
 
-
-<div class="row courses justify-content-center">
-    <% @register_courses.each do |course| %>
-        <div class="displayCourses">           
-            <div class= "col-lg-4 col-md-6 col-sm-12">
-                <div class="card indCard">
-                    <div class="card-body text-center">
-                        <h4 class="card-title"><%= course.name %></h4>
-                        <p class="card-text"><%= course.start %> - <%= course.end %></p>
-                        <%= link_to 'View More', register_course_path(course.id), class: "btn btn-default loginButton" %>                  
+<% if !@register_courses.blank? %>
+<div class="registerGroupCourses">
+    <h3 class="text-center">Register for Courses</h3>
+</div>
+    <div class="row courses justify-content-center">
+        <% @register_courses.each do |course| %>
+            <div class="displayCourses">           
+                <div class= "col-lg-4 col-md-6 col-sm-12">
+                    <div class="card indCard">
+                        <div class="card-body text-center">
+                            <h4 class="card-title"><%= course.name %></h4>
+                            <p class="card-text"><%= course.start %> - <%= course.end %></p>
+                            <%= link_to 'View More', register_course_path(course.id), class: "btn btn-default loginButton" %>                  
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <% end %>
-</div>
+        <% end %>
+    </div>
+<% else %>
+    <div class="noAvailableCourses">
+        <h3 class="text-center">There are no available courses at this time.</h3>
+    </div>
+    <%= render "layouts/guildCoreValues"%>
+    <%= render "layouts/companyCarousel"%> 
+
+
+
+<% end %>
     
         
 

@@ -18,7 +18,9 @@ class RegisterCoursesController < ApplicationController
     end
 
     def create
+        # binding.pry
         @register_course = RegisterCourse.find_by(id: params[:register_course])
+        @register_course.student_id = params[:student_id]
         current_student.register_courses << @register_course
         redirect_to student_courses_path(current_student.id)
     end
