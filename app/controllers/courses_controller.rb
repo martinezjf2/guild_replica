@@ -41,7 +41,7 @@ class CoursesController < ApplicationController
         @course = find_course
 
        if @course.update(course_params)
-            redirect_to student_courses_path(@course.student_id), success: "Course Successfully Updated!"
+            redirect_to student_course_path(@course.student_id), success: "Course Successfully Updated!"
         else
             redirect_to edit_student_course_path(@course.student_id, @course), danger: "Please fill out the Missing Fields."
         end
