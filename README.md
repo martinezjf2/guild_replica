@@ -21,6 +21,13 @@ To use The Guild Education Replica, follow these steps:
 
 6. Lastly, sign up and enjoy the experience!
 
+## Features
+
+- This appllication does not have a "Home" tab on the navbar. The Guild logo, is used to direct a user to the student's homepage. If you do not have an account, and you are trying to log in, you will get an error. Click on the Guild logo to go to The Guild's homepage.
+- Through active storage, a student can attach a profile picture to make it more personal and unique to other students.
+- The footer links do not redirect to any path, besides the home route which would be the Guild's homepage.
+- On the [original site](https://www.guildeducation.com/) the background image for the jumbotron disappears when shrinking the window to a tablet or mobile frame. This issue was fixed in this application, to make sure that the image is still intact when shrinking your screen size.
+
 ## Contributing to The Guild Education Replica
 
 To contribute to The Guild Education Replica, follow these steps:
