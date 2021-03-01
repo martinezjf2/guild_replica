@@ -23,7 +23,7 @@ html lang="en"
         .inputBox
         
           = form_for @student do |f|
-            = f.file_field :image
+            = f.file_field :image, class: "fileImage"
             br/
             br/            
             = f.text_field :first_name, :placeholder => "Enter First Name", class: "form-control signUpInput "
