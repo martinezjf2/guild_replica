@@ -40,6 +40,10 @@ To contribute to The Guild Education Replica, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
+## Deploymeent
+
+There is a live demonstration of this project on heroku, [click here](https://guild-education-replica.herokuapp.com/) to view.
+
 ## Contact
 
 If you want to contact me you can reach me at <martinezjf2@gmail.com>.
