@@ -6,7 +6,7 @@
             <% if resource.avatar.attached? %>
                 <%= image_tag resource.avatar.variant(resize: "100x100"), class: "rounded-cirlce" %>
             <% else %>
-                <%= image_tag "students/profileExample.jpeg", height: 100, width: 100, class: "rounded-circle", alt: "profile-image"%>
+                <%= image_tag "students/profileExample", height: 100, width: 100, class: "rounded-circle", alt: "profile-image"%>
             <% end %>
         </div>
     </div>

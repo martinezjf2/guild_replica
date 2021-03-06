@@ -17,6 +17,22 @@
   <a href="/students/<%= @student.id %>" class="guildSignIn" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
 
 <h3 class="welcomeBack">Edit Your Profile</h3>
+
+- if @student.image_attachment == nil
+            = image_tag("students/profileExample.jpeg", width: '100px', class: "rounded-circle") 
+        - else
+            = image_tag(current_student.image, width: '100px', class: "rounded-circle")
+        = render "layouts/flash"
+
+        <% if @student.image_attachment.present? %>
+        <!-- show the image -->
+            <%= image_tag("students/guild_logo.jpeg", width: '175px') %>
+        <% else %>
+        <!-- show the default image -->
+            <%= image_tag("students/guild_logo.jpeg", width: '175px') %>
+        <% end %>
+
+
     <%= render "layouts/flash" %>
 
 <div class="inputBox">

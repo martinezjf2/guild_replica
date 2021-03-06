@@ -12,16 +12,16 @@ html lang="en"
 
         a.guildSignIn href="/students/#{@student.id}" = image_tag("students/guild_logo.jpeg", width: '175px')
         h3.welcomeBack Edit Your Profile
-        - if @student.image_attachment == nil
-            = image_tag("students/profileExample.jpeg", width: '100px', class: "rounded-circle") 
+        - if @student.image_attachment.present?
+            = image_tag(current_student.image_attachment, width: '100px', class: "rounded-circle")
         - else
-            = image_tag(current_student.image, width: '100px', class: "rounded-circle")
-        
+            = image_tag("students/profileExample.jpeg", width: '100px', class: "rounded-circle") 
+
         = render "layouts/flash"
 
         
         .inputBox
-        
+
           = form_for @student do |f|
             = f.file_field :image, class: "fileImage"
             br/
