@@ -77,8 +77,9 @@ test:
   #
   production:
     url: <%= ENV['DATABASE_URL'] %>
-# production:
-#   <<: *default
-#   database: guild_production
-#   username: guild
-#   password: <%= ENV['GUILD_DATABASE_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: guild_production
+  username: guild
+  password: <%= ENV['GUILD_DATABASE_PASSWORD'] %>
