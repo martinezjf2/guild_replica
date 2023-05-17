@@ -24,6 +24,7 @@ gem 'psych', '< 4'
 gem 'bcrypt', '~> 3.1.7'
 # Install Slim. Read More: https://rdoc.info/gems/slim/frames
 gem 'slim'
+gem 'bootstrap'
 
 gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
 
