@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Education as a Benefit - Guild Education</title>
-    </head>
-    <body class="text-center">
-        <%= render "layouts/navbar"%>
-        <%= render "layouts/flash" %>
 
-            <div class="section">
+
+
+            <div class="section text-center">
                 <a href="/students/<%= current_student.id%>" class="guild" ><%= image_tag("students/guild_logo.jpeg", width: '175px') %></a>
                     <div class="container-fluid newCourseForm">
                         <ul class="createCourseRules">
@@ -32,6 +24,5 @@
                         <% end %>
                     </div>
             </div>
-        <%= render "layouts/footer"%>
-    </body>
-</html>
+        
+

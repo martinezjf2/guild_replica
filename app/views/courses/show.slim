@@ -1,13 +1,4 @@
-doctype html
-html lang="en" 
-  head
-    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
-    meta charset="UTF-8" /
-    meta content="width=device-width, initial-scale=1.0" name="viewport" /
-    title Education as a Benefit - Guild Education
-  body
-    = render "layouts/navbar"
-    = render "layouts/flash"
+
     section#showCourse
       .container-fluid
         .courseDetails.text-center
@@ -30,4 +21,4 @@ html lang="en"
     section#joinBenefits
       h2.endQuestion Would you like to Add Another Course?
       = link_to 'Add A Course', new_student_course_path(@course.student_id), class: "btn btn-default btn-lg signUpButton"
-    = render "layouts/footer"
+    

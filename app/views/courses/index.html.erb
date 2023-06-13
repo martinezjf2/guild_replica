@@ -1,15 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Education as a Benefit - Guild Education</title>
-    </head>
-    <body>
-    
-        <%= render "layouts/navbar"%>
-        <%= render "layouts/flash" %>
+
         <%= render "layouts/studentHeader"%>
 
         <% if !@courses.blank? || !@register_courses.blank? %>
@@ -75,6 +65,3 @@
     <% end %>
 
         <%= render "layouts/addACourse"%>
-        <%= render "layouts/footer"%>
-    </body>
-</html>

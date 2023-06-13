@@ -8,10 +8,15 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('students/favicon.ico') %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <%= render "layouts/navbar"%>
+    <%= render "layouts/flash" %>
   
     <%= yield %>
+
+    <%= render "layouts/footer"%>
   </body>
 </html>
