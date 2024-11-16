@@ -18,7 +18,7 @@
   "version": "0.1.0",
   "engines": {
     "node": "22.11.0",
-    "yarn": "1.22.19"
+    "yarn": "1.22.22"
   },
   "devDependencies": {
     "@babel/plugin-transform-private-methods": "^7.25.9",
